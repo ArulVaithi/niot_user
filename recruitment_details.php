@@ -246,19 +246,24 @@
         <div class="data-tables" style="padding-left:100px;padding-right:100px">
             <h2 class="text-center"><strong>Recruitments</strong></h2>
             <!-- <h4 class="text-center"><strong>Current Vacancies</strong></h4> -->
-            <div class="col-lg-12 ">
+            <div class="row table_row">
+                    <div class="col-lg-10">
+                    </div>
+                    <div class="col-lg-2">
+                        <a href="recruitment_archive.php" class="btn btn-success button pull-right" style="margin-left:10px;color:#fff"><i class="fa fa-archive" aria-hidden="true"></i> Archive </a>
+                    </div>
+                </div>
+            <!-- <div class="col-lg-12 ">
                 <div class="recruitment_container">
                     <div class="recruitment_tabs">
                         <input type="radio" id="radio-1" name="recruitment_tabs" checked />
                         <label class="recruitment_tab" for="radio-1">Current Vacancies</label>
-                        <input type="radio" id="radio-2" name="recruitment_tabs"  />
+                        <input type="radio" id="radio-2" name="recruitment_tabs" />
                         <label class="recruitment_tab" for="radio-2">Archive</label>
-                        <!-- <input type="radio" id="radio-3" name="recruitment_tabs" checked /> -->
-                        <!-- <label class="recruitment_tab" for="radio-3">Contact Us</label> -->
                         <span class="glider"></span>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- <br> -->
             <div class="table-responsive">
                 <table id="tbl-en-draft" class="table  table-bordered dt-responsive" style="width:100">

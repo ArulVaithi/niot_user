@@ -1,9 +1,9 @@
 <?php include("include/db_connection.php");
 
-$draftEn = "SELECT * FROM mst_recruitment_en WHERE  status='L' ORDER BY updated_on desc ";
+$draftEn = "SELECT * FROM mst_recruitment WHERE  status='L' ORDER BY updated_on desc ";
 $resultDraftEn = pg_query($db, $draftEn);
 $count = pg_num_rows($resultDraftEn);
-echo $count;
+// echo $count;
 // $myArray = [];
 
 // array_push($myArray, (object)[
@@ -22,7 +22,7 @@ while ($row = pg_fetch_assoc($resultDraftEn)) {
     array_push($arr, $o);
 }
 
-echo json_encode($arr, JSON_UNESCAPED_UNICODE);
+ json_encode($arr, JSON_UNESCAPED_UNICODE);
 // while (
 //     $row = pg_fetch_array(
 //         $resultDraftEn

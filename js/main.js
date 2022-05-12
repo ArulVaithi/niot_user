@@ -18,6 +18,7 @@
   });
 
   $(document).ready(function () {
+    $(".select2").select2();
     // mobile_menu
     //load_menu();
     var menu = $("ul#navigation");

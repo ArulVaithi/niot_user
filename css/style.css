@@ -12260,3 +12260,34 @@ input[id="radio-3"]:checked~.glider {
   width:100%;
   position:absolute;
 }
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 7px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+}
+.table_container
+{
+  background:#eeeeee;
+  padding-bottom:30px;
+}
+
+.table_head
+{
+  padding-top:20px;
+  
+}
+.table_row{
+  padding-bottom:10px;
+}
+.table_align{
+  padding-left:31px
+}
+.hr_align {
+  padding-bottom:20px;
+}
