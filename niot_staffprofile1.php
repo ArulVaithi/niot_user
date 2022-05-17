@@ -104,7 +104,7 @@
                     <section class="page-section resume-section  p-lg-5 d-flex d-column" id="about">
                         <div class="row my-auto">
                             <div class="col-12">
-                                <h2 class=" text-center">About</h2>
+                                <h2 class=" text-center">Basic Details</h2>
                                 <div class=" heading-border"></div>
                             </div>
                             <div class="resume-item col-md col-sm-12 col-lg-12">
@@ -179,7 +179,9 @@
                                 </div>
                             </div>
                         </div>
+                       
                     </section>
+                    <hr>
                     <section class="page-section resume-section p-3 p-lg-" id="academic">
                         <div class="row my-auto">
                             <div class="col-12">

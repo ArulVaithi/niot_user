@@ -326,9 +326,10 @@ $techcontents = $techrow['contents'];
 
                                         </div> -->
                                         <div class="col-lg-12">
-                                        <div id="map-container-google-3" class="z-depth-1-half map-container-3">
-                                            <iframe src="https://maps.google.com/maps?q=warsaw&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" style="border:0" allowfullscreen></iframe>
-                                        </div>
+                                            <div id="map-container-google-3" class="z-depth-1-half map-container-3">
+                                                <!-- <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+                                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3888.382603168268!2d80.21019511113947!3d12.947351944729602!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525db5aa6a6a8b%3A0xf55affdcd618f287!2sNATIONAL%20INSTITUTE%20OF%20OCEAN%20TECHNOLOGY%2C%20Ma%20Po%20Si%20Nagar%2C%20Pallikaranai%2C%20Chennai%2C%20Tamil%20Nadu%20600100!5e0!3m2!1sen!2sin!4v1652353156721!5m2!1sen!2sin" frameborder="0" style="border:0" allowfullscreen ></iframe>
+                                            </div>
                                         </div>
                                     </div>
                                     <!-- <h5 class="text-uppercase font-weight-bold mb-3">Contact Us</h5>
