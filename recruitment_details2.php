@@ -1,6 +1,8 @@
 <?php include("include/db_connection.php");
 
 $draftEn = "SELECT * FROM mst_recruitment WHERE  status='L' ORDER BY updated_on desc ";
+// echo $draftEn;
+// exit;
 $resultDraftEn = pg_query($db, $draftEn);
 $count = pg_num_rows($resultDraftEn);
 // echo $count;
