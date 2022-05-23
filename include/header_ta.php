@@ -35,14 +35,17 @@ include('db_connection.php');
                 <div class="col-xl-7 col-md-6">
                     <div class="short_contact_list">
                         <ul>
-                            <li><a href="#">
-                                    <!-- <div class="searchBox">
+                            <!--<li><a href="#">
+                                     <div class="searchBox">
                                         <input class="searchInput" type="text" name="" placeholder="Search" required>
-                                        <button class="searchButton" href="#"> -->
+                                        <button class="searchButton" href="#"> 
                                     <i class="fa fa-search"></i>
-                                    <!-- </button>
-                                    </div> -->
-                                </a></li>
+                                    </button>
+                                    </div> 
+                                </a></li>-->
+                                <li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#" title="linkedIn"><i class="fa fa-linkedin"></i></a></li>
                             <li><span class="toolbarline"></span></li>
                             <li><a href="#" title="Skip to main content"> <i class="fa fa-share-square"></i></a></li>
                             <!-- <li><a href="#"><i style="color:#fff" class="fa fa-search"></i>search</a></li> -->

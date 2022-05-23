@@ -104,53 +104,53 @@
     <div id="img_grid" class="img-grid">
         <div class="container-block">
             <a href="niot_staffprofile1.php">
-            <img src="img/leaders/leader1.jpg">
+            <img src="img/leaders/leader3.jpg" style="width:300px;height:310px">
             <div class="inner-block">
                 <div class="slider-top-right"></div>
             </div>
 
             <div class="content text-center" style="background-color:#fff;">
-                <span style="color:#111;text-align:center">Dr. Jitendra Singh</span>
-                <span style="color:#111;">UNION MINISTER, MOES </span>
+                <span style="color:#111;text-align:center">Dr G A RAMADASS</span>
+                <span style="color:#111;">Director </span>
             </div>
             </a>
         </div>
         <div class="container-block">
         <a href="niot_staffprofile1.php">
-            <img src="img/leaders/leader2.jpg">
+            <img src="img/leaders/leader4.jpg"  style="width:300px;height:310px">
             <div class="inner-block">
                 <div class="slider-top-right"></div>
             </div>
 
             <div class="content text-center" style="background-color:#fff;">
-                <span style="color:#111;text-align:center">Dr. Jitendra Singh</span>
-                <span style="color:#111;">UNION MINISTER, MOES </span>
+                <span style="color:#111;text-align:center">Dr PURNIMA JALIHAL</span>
+                <span style="color:#111;">Group Head - EFW & CEE, SCIENTIST-G </span>
             </div>
         </a>
         </div>
         <div class="container-block">
         <a href="niot_staffprofile1.php">
-            <img src="img/leaders/leader3.jpg">
+            <img src="img/leaders/leader5.jpg"  style="width:300px;height:310px">
             <div class="inner-block">
                 <div class="slider-top-right"></div>
             </div>
 
             <div class="content text-center" style="background-color:#fff;">
-                <span style="color:#111;text-align:center">Dr. Jitendra Singh</span>
-                <span style="color:#111;">UNION MINISTER, MOES </span>
+                <span style="color:#111;text-align:center">Dr DHILSHA RAJAPAN</span>
+                <span style="color:#111;"> Group Head - MSS, SCIENTIST-G</span>
             </div>
         </a>
         </div>
         <div class="container-block">
         <a href="niot_staffprofile1.php">
-            <img src="img/leaders/leader1.jpg">
+            <img src="img/leaders/leader6.jpg"  style="width:300px;height:310px">
             <div class="inner-block">
                 <div class="slider-top-right"></div>
             </div>
 
             <div class="content text-center" style="background-color:#fff;">
-                <span style="color:#111;text-align:center">Dr. Jitendra Singh</span>
-                <span style="color:#111;">UNION MINISTER, MOES </span>
+                <span style="color:#111;text-align:center">Dr RAJASEKHAR D</span>
+                <span style="color:#111;">Group Head - VMC, SCIENTIST-G </span>
             </div>
         </a>
         </div>

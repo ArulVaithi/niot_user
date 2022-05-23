@@ -19,12 +19,10 @@ $previousyear = $currentyear - 1;
 <body>
     <?php include("include/header.php");
 
-
     $get_year = "select date_part('year', announce_dt) from mst_pressrelease_$currentLang where date_part('year', announce_dt) <> $currentyear group by announce_dt";
     //    echo $get_year;
     //    exit;
     $resultget_year = pg_query($db, $get_year);
-
 
     ?>
 

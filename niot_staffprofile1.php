@@ -86,7 +86,7 @@
                                 </a>
                                 <h3 class="username text-center">Dr G A RAMADASS</h3>
                                 <h5 class="username text-center">Director</h5>
-                                <ul class="quick-1st nobulletstyle">
+                                <ul class="quick-1st nobulletstyle" style="padding:10px;">
                                     <li><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
                                     <li><a class="nav-link js-scroll-trigger" href="#academic">Academic Background</a></li>
                                     <li><a class="nav-link js-scroll-trigger" href="#specialisation">Area of specialisation</a></li>
