@@ -115,7 +115,7 @@
                                 <div class="subheading mb-3">Director of NIOT
                                 </div>
                                 <div class="col-lg-12">
-                                    <p class="">I am experienced in leveraging agile frameworks to provide a robust
+                                    <p class="basic_description">I am experienced in leveraging agile frameworks to provide a robust
                                         synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to
                                         further the overall value proposition.</p>
                                 </div>
@@ -238,13 +238,13 @@
                     <section class="page-section resume-section p-3 d-flex flex-column" id="specialisation">
                         <div class="">
                             <div class="col-12">
-                                <h2 class=" text-center" style="color:#111;">Area of Specialisation</h2>
+                                <h2 class=" text-center" >Area of Specialisation</h2>
                                 <div class="mb-3 heading-border"></div>
                             </div>
                             <!-- <h3 class="text-center text-white">Area of Specialisation</h3> -->
                             <div class="row text-center my-auto ">
                                 <div class="resume-item col-md-6 col-sm-12 ">
-                                    <div class="card mx-0 p-4 mb-5" style="border-color: #17a2b8; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);">
+                                    <div class="card mx-0 p-4 mb-5 areaspecial" >
                                         <div class=" resume-content mr-auto">
                                             <h4 class="mb-3"><i class="fa fa-globe mr-3 text-info"></i> Manned and Unmanned Underwater Vehicles</h4>
                                             <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the
@@ -256,8 +256,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="resume-item col-md-6 col-sm-12">
-                                    <div class="card mx-0 p-4 mb-5" style="border-color: #ffc107; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);">
+                                <div class="resume-item col-md-6 col-sm-12 ">
+                                    <div class="card mx-0 p-4 mb-5 areaspecial" style="">
                                         <div class="resume-content mr-auto">
                                             <h4 class="mb-3"><i class="fa fa-laptop mr-3 text-warning"></i> Underwater Acoustics</h4>
                                             <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the
@@ -270,7 +270,7 @@
                                     </div>
                                 </div>
                                 <div class="resume-item col-md-6 col-sm-12">
-                                    <div class="card mx-0 p-4 mb-5" style="border-color: #28a745; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);">
+                                    <div class="card mx-0 p-4 mb-5 areaspecial" >
                                         <div class="resume-content mr-auto">
                                             <h4 class="mb-3"><i class="fa fa-camera mr-3 text-success"></i> Marine Instruments</h4>
                                             <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the

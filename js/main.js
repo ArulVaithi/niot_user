@@ -135,13 +135,10 @@
     // review-active
     $(".expert_active").owlCarousel({
       loop: true,
-      margin: 30,
+      margin: 10,
       items: 1,
       autoplay: true,
-      navText: [
-        '<i class="ti-angle-left"></i>',
-        '<i class="ti-angle-right"></i>',
-      ],
+      navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
       nav: true,
       dots: false,
       autoplayHoverPause: true,

@@ -25,6 +25,7 @@ if (isset($_SESSION['lang'])) {
 ?>
 <script src="js/vendor/modernizr-3.5.0.min.js"></script>
 <script src="js/vendor/jquery-1.12.4.min.js"></script>
+<script src="js/darkmode.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
@@ -59,12 +60,14 @@ if (isset($_SESSION['lang'])) {
 
 <!-- Select 2 js -->
 <script src="css/select2/dist/js/select2.full.min.js"></script>
+
 <!-- <script src="js/datatable/jquery.dataTables.min.js"></script>
     <script src="js/datatable/dataTables.bootstrap.min.js"></script> -->
 <!-- <script src="js/datatable/dataTables.responsive.min.js"></script>
     <script src="js/datatable/responsive.bootstrap.min.js"></script> -->
 <!-- <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script> -->
 <script src="js/main.js"></script>
+
 <script>
     $('#datepicker').datepicker({
         iconsLibrary: 'fontawesome',

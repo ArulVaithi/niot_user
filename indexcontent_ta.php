@@ -13,114 +13,111 @@
                         <a href="about.php" class="boxed-btn3-white-2 align-self-end">More Details </a>
                     </div>
                 </div> -->
-             <div class="col-xl-4 col-md-4 wow fadeInLeftBig" style="background-color: #eeeeee;border-radius: 15px;padding-right:10px;">
+             <div class="col-xl-4 col-md-4 wow fadeInLeftBig publication_card" >
                  <div class="single_service">
                      <div class="icon">
                          <i class="fa fa-id-card"></i>
                      </div>
                      <h3>செய்திகள்/அறிவிப்புகள்</h3>
-                     <ul class="bulletstyle">
-                         <?php if ($announcecount == 0) {
-                                echo '<li style="color:#111;">  No Data Found</li>'; ?>
-                             <!-- <div class="page">
-                                    <div class="container-center">
-                                        <div class="box tgg2 tgg1">
-                                         
-                                           <marquee class="marquee1"width="100%" style="padding-left:20px;" direction="up" height="100%"> <ul class=" nobulletstyle" >
-                                                <li style="color:#111;"><a href="#"> No Data Found</a></li>
-                                                <li style="color:#111;"><a href="#"> No Data Found</a></li>
-                                                <li style="color:#111;"><a href="#"> No Data Found</a></li>
-                                                <li style="color:#111;"><a href="#"> No Data Found</a></li>
-                                            </ul>
-                                           </marquee>
-                                            
-                                        </div>
-                                    </div>
-                                </div> -->
 
-                         <?php
-                            } else { ?>
-                             <div class="page">
-                                 <div class="container-center">
-                                     <div class="box tgg2 tgg1">
-                                         <marquee onMouseOver="this.stop()" onMouseOut="this.start()" class="" width="100%" style="padding-left:20px;" direction="up" height="100%">
-                                             <ul class=" nobulletstyle marquee1">
-                                                 <?php
-                                                    $i = 0;
-                                                    while ($row = pg_fetch_array($resultannounce)) { ?>
+                     <div class="page">
+                         <div class="container-center">
+                             <div class="box tgg2 tgg1">
+                                 <marquee onMouseOver="this.stop()" onMouseOut="this.start()" class="" width="100%" style="padding-left:20px;" direction="up" height="100%">
 
-                                                     <li>
-                                                         <a href="announce_details.php" target="_blank"> <?php echo $row['title']; ?> </a>
-                                                     </li>
-                                             <?php }
-                                                } ?>
-                                             </ul>
-                                         </marquee>
-                                     </div>
-                                 </div>
+                                     <?php if ($announcecount == 0) { ?>
+                                         <ul class="bulletstyle">
+                                             <li > No Data Found</li>
+                                         </ul>
+                                     <?php
+                                        } else { ?> <ul class=" bulletstyle ">
+                                             <?php
+                                                $i = 0;
+                                                while ($row = pg_fetch_array($resultannounce)) { ?>
+
+                                                 <li>
+                                                     <a href="announce_details.php" target="_blank"> <?php echo $row['title']; ?> </a>
+                                                 </li>
+                                             <?php   }
+                                                ?>
+                                         </ul> <?php
+                                            } ?>
+
+                                 </marquee>
                              </div>
-
-                     </ul>
+                         </div>
+                     </div>
                      <br>
                      <a href="announce_details.php" class="moredetails align-self-end">More Details --></a>
                  </div>
              </div>
-             <div class="col-xl-4 col-md-4 wow zoomInUp" style="background-color:#041e42; border-radius: 15px; padding-right: 10px; visibility: visible;">
+             <div class="col-xl-4 col-md-4 wow zoomInUp publication_card_blue" >
                  <div class="single_service">
                      <div class="icon">
-                         <i class="fa fa-bullhorn" style="color :#fff;"></i>
+                         <i class="fa fa-bullhorn" ></i>
                      </div>
-                     <h3 style="color :#fff;">நிகழ்வுகள்</h3>
+                     <h3 >நிகழ்வுகள்</h3>
                      <!-- <br> -->
-                     <ul class="bulletstylewhite">
-                         <?php if ($eventcount == 0) {
-                                echo ' <li>  No Data Found</li>';
-                            } else {  ?>
-                             <div class="page">
-                                 <div class="container-center">
-                                     <div class="box tgg2 tgg1">
-                                         <marquee onMouseOver="this.stop()" onMouseOut="this.start()" class="" width="100%" style="padding-left:20px;" direction="up" height="100%">
-                                             <ul class=" nobulletstyle bluebox">
-                                                 <?php
-                                                    $i = 0;
-                                                    while ($row = pg_fetch_array($resultevent)) { ?>
 
-                                                     <li>
-                                                         <a href="niot_events.php" target="_blank"> <?php echo $row['title']; ?> </a>
-                                                     </li>
-                                             <?php }
-                                                } ?>
-                                             </ul>
-                                         </marquee>
-                                     </div>
-                                 </div>
+                     <div class="page">
+                         <div class="container-center">
+                             <div class="box tgg2 tgg1">
+                                 <marquee onMouseOver="this.stop()" onMouseOut="this.start()" class="" width="100%" style="padding-left:20px;" direction="up" height="100%">
+
+                                     <?php if ($eventcount == 0) { ?>
+                                         <ul class="bulletstylewhite ">
+                                             <li > No Data Found</li>
+                                         </ul>
+                                     <?php
+                                        } else {
+                                        ?> <ul class=" bulletstylewhite bluebox">
+                                             <?php
+                                                $i = 0;
+                                                while ($row = pg_fetch_array($resultevent)) { ?>
+
+                                                 <li>
+                                                     <a href="niot_events.php" target="_blank"> <?php echo $row['title']; ?> </a>
+                                                 </li>
+                                             <?php   }
+                                                ?>
+                                         </ul><?php
+                                            } ?>
+
+                                 </marquee>
                              </div>
+                         </div>
+                     </div>
 
-                             <!-- <li>Clinical excellence must be</li>
+                     <!-- <li>Clinical excellence must be</li>
                             <p > </p>
                             <li>Clinical excellence must be </li> -->
-                     </ul>
+
                      <br>
                      <a href="niot_events.php" class="moredetails_bgblue ">More Details --></a>
                  </div>
              </div>
-             <div class="col-xl-4 col-md-4 wow fadeInRightBig" style="background-color: #eeeeee;border-radius: 15px;">
+             <div class="col-xl-4 col-md-4 wow fadeInRightBig publication_card" >
                  <div class="single_service">
                      <div class="icon">
                          <i class="fa fa-calendar"></i>
                      </div>
                      <h3>வேலைவாய்ப்பு</h3>
-                     <ul class="bulletstyle">
-                         <?php if ($reccount == 0) {
-                                echo ' <li style="color:#111;">  No Data Found</li>';
-                            } else {
-                                $i = 0;
-                                while ($row = pg_fetch_array($resultRec)) { ?>
+
+                     <?php if ($reccount == 0) { ?>
+                         <ul class="bulletstyle">
+                             <li style="color:#111;"> No Data Found</li>
+                         </ul>
+                     <?php     } else {
+                        ?> <ul class="bulletstyle"> <?php
+                                                    $i = 0;
+                                                    while ($row = pg_fetch_array($resultRec)) { ?>
 
                                  <li> <a href="recruitment_details.php" target="_blank"><?php echo $row['title']; ?> </a></li></br>
-                         <?php }
+                             <?php }
+                                ?>
+                         </ul><?php
                             } ?>
-                     </ul>
+
                      <br>
                      <a href="recruitment_details.php" class="moredetails align-self-end">More Details --></a>
                  </div>
@@ -152,12 +149,12 @@
                      <p>தேசியப் பெருங்கடல் தொழில்நுட்பக் கழகம் (தே.பெ.தொ.க) இந்திய அரசின் புவி அறிவியல் அமைச்சகத்தின் கீழ் ஒரு தன்னாட்சி சமூகமாக நவம்பர் 1993 யில் நிறுவப்பட்டது. தே.பெ.தொ.க ஒரு நிர்வாகக் குழுவால் நிர்வகிக்கப்படுகிறது மற்றும் இயக்குநர் நிறுவனத்தின் தலைவராக உள்ளார். புவி அறிவியல் அமைச்சகத்தின் கீழ் தே.பெ.தொ.க தொடங்குவதன் முக்கிய நோக்கம், இந்திய பிரத்தியேக பொருளாதார மண்டலத்தில் (EEZ) உயிரற்ற மற்றும் வாழும் வளங்களை அறுவடை செய்வதோடு தொடர்புடைய பல்வேறு பொறியியல் சிக்கல்களைத் தீர்க்க நம்பகமான உள்நாட்டு தொழில்நுட்பங்களை உருவாக்குவதாகும்.
                      </p>
 
-                     <ul class="bulletstyle">
-                         <li> <a href="about.php"><b style="color:#fff">தொலைநோக்கு</b> </a></li>
-                         <li> <a href="about.php"><b style="color:#fff">நோக்கம்
+                     <ul class="bulletstyle indexaboutlist">
+                         <li> <a href="about.php"><b >தொலைநோக்கு</b> </a></li>
+                         <li> <a href="about.php"><b >நோக்கம்
                                  </b> </a>
                          </li>
-                         <li> <a href="about.php"><b style="color:#fff">முக்கிய நோக்கங்கள்
+                         <li> <a href="about.php"><b >முக்கிய நோக்கங்கள்
                                  </b> </a> </li>
                      </ul>
                      <a href="about.php" class="boxed-btn3-white-2">மேலும் பார்க்க</a>
@@ -167,12 +164,12 @@
      </div>
  </div>
  <!-- welcome_docmed_area_end -->
- <section class="our_department_area" style="background-color: #041E42;">
+ <section class="our_department_area" >
      <div class="container">
          <div class="row wow zoomIn">
              <div class="col-xl-12">
                  <div class="doctors_title mb-55 text-center">
-                     <h3 style="color:#fff;">எங்கள் தலைவர்கள்</h3>
+                     <h3 >எங்கள் தலைவர்கள்</h3>
                  </div>
              </div>
          </div>
@@ -397,13 +394,13 @@
                 </div> -->
          </div>
          <div class="department_content align-right">
-             <a href="#" style="color: #fff;float:right;" class="learn_more">மேலும் பார்க்க--></a>
+             <a href="#"  class="bottomlearn_more">மேலும் பார்க்க--></a>
          </div>
      </div>
  </div>
 
 
- <div class="our_department_area">
+ <!-- <div class="our_department_area">
      <div class="container">
          <div class="row wow bounceInRight">
              <div class="col-lg-12">
@@ -411,10 +408,10 @@
              </div>
          </div>
          <div class="department_content align-right">
-             <a href="#" style="color: #fff;float:right;" class="learn_more">Load More --></a>
+             <a href="#" style="color: #fff;float:right;" class="learn_more">Load More </a>
          </div>
      </div>
- </div>
+ </div> -->
  <!-- offers_area_end -->
 
  <!-- testmonial_area_start -->
@@ -520,8 +517,8 @@
  <div class="business_expert_area ">
      <div class="business_tabs_area">
          <div class="container">
-             <div class="col-lg-12 ">
-                 <h2 class="text-center">Publications </h2>
+             <div class="col-lg-12 section_title ">
+                 <h3 class="text-center">Publications </h3>
              </div>
 
 
@@ -596,7 +593,7 @@
                                                 </svg> -->
 
                                              <h2 class="card-front__heading">
-                                             செய்தி குறிப்பு
+                                                 செய்தி குறிப்பு
                                              </h2>
                                              <!-- <p class="card-front__text-price">
                                                     From £29
@@ -620,7 +617,7 @@
                              <div class="inside-page">
                                  <div class="inside-page__container">
                                      <h3 class="inside-page__heading inside-page__heading--city">
-                                     செய்தி குறிப்பு
+                                         செய்தி குறிப்பு
                                      </h3>
                                      <p class="inside-page__text">
                                          As cities never sleep, there are always something going on, no matter what time!
@@ -661,7 +658,7 @@
                                                     </g>
                                                 </svg> -->
                                              <h2 class="card-front__heading">
-                                             செய்திமடல்
+                                                 செய்திமடல்
                                              </h2>
                                          </div>
 
@@ -683,7 +680,7 @@
                              <div class="inside-page">
                                  <div class="inside-page__container">
                                      <h3 class="inside-page__heading inside-page__heading--ski">
-                                     செய்திமடல்
+                                         செய்திமடல்
                                      </h3>
                                      <p class="inside-page__text">
                                          Love snow? Why not take up exciting ski-in sessions and hit the slope?
@@ -712,7 +709,7 @@
                                                 </svg> -->
 
                                              <h2 class="card-front__heading">
-                                             ஆண்டு அறிக்கைகள்
+                                                 ஆண்டு அறிக்கைகள்
                                              </h2>
                                              <!-- <p class="card-front__text-price">
                                                     From £229
@@ -736,7 +733,7 @@
                              <div class="inside-page">
                                  <div class="inside-page__container">
                                      <h3 class="inside-page__heading inside-page__heading--beach">
-                                     ஆண்டு அறிக்கைகள்
+                                         ஆண்டு அறிக்கைகள்
                                      </h3>
                                      <p class="inside-page__text">
                                          Relax and get sun-kissed tan in the sea or take up surfting for an adventure!
@@ -844,12 +841,12 @@
         </div>
     </div> -->
 
- <section id="portfolio" class="portfolio">
+ <section  class="portfolio">
      <div class="container" data-aos="fade-up">
-         <div class="section-title text-center">
-             <h2 style="color:#fff;">தே.பெ.தொ.க தொகுப்புகள்
-             </h2>
-             <p style="color:#fff;">Group of NIOT Photos & Videos related to Events , Technologies, Awards etc.</p>
+         <div class="section_title text-center">
+             <h3 >தே.பெ.தொ.க தொகுப்புகள்
+             </h3>
+             <p >Group of NIOT Photos & Videos related to Events , Technologies, Awards etc.</p>
          </div>
 
          <div class="row" data-aos="fade-up" data-aos-delay="100">

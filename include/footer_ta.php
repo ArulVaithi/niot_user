@@ -155,13 +155,13 @@
     <!-- expert_doctors_area_start -->
     <div class="expert_doctors_area overlay" style="background-image: url('img/bg/bg_15.jpg');background-size: cover;object-fit:cover">
         <div class="container">
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-xl-12">
                     <div class="doctors_title mb-55">
                         <h3></h3>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="row">
                 <div class="col-xl-12">
                     <div class="expert_active owl-carousel">
@@ -275,16 +275,16 @@
                         <div class="row text-center">
                             <div class="col-lg-2 col-md-2 col-12"></div>
                             <div class="col-lg-8 col-md-8 col-12 footerpolicy">
-                                <i class="fa fa-file text-white"></i> <a href="#"> வலைதள கொள்கைகள்</a><span>
+                                <i class="fa fa-file"></i> <a href="#"> வலைதள கொள்கைகள்</a><span>
                                     | </span>
 
-                                <i class="fa fa-question text-white"></i><a href="#"> உதவி </a>
+                                <i class="fa fa-question"></i><a href="#"> உதவி </a>
                                 <span>|</span>
 
-                                <i class="fa fa-comment text-white"></i> <a href="#"> கருத்துகளை தெரிவிக்க </a>
+                                <i class="fa fa-comment"></i> <a href="#"> கருத்துகளை தெரிவிக்க </a>
                                 <span>|</span>
 
-                                <i class="fa fa-id-badge text-white"></i> <a href="#"> தொடர்பு கொள்ள</a>
+                                <i class="fa fa-id-badge"></i> <a href="#"> தொடர்பு கொள்ள</a>
 
                             </div>
                             <div class="col-lg-2 col-md-2 col-12"></div>

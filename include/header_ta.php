@@ -43,10 +43,8 @@ include('db_connection.php');
                                     </button>
                                     </div> 
                                 </a></li>-->
-                                <li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#" title="linkedIn"><i class="fa fa-linkedin"></i></a></li>
-                            <li><span class="toolbarline"></span></li>
+                               
+                           
                             <li><a href="#" title="Skip to main content"> <i class="fa fa-share-square"></i></a></li>
                             <!-- <li><a href="#"><i style="color:#fff" class="fa fa-search"></i>search</a></li> -->
                             <li><span class="toolbarline"></span></li>
@@ -74,6 +72,10 @@ include('db_connection.php');
                                     </select>
                                 </form>
                             </li>
+                            <li><span class="toolbarline"></span></li>
+                            <li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#" title="linkedIn"><i class="fa fa-linkedin"></i></a></li>
                             <!-- <li><a href="index_hi.php">हिंदी</a></li>
                             <li><span class="toolbarline"></span></li>
                             <li><a href="#">English</a></li>
@@ -87,7 +89,7 @@ include('db_connection.php');
         </div>
         <div id="sticky-header" class="main-header-area">
             <!-- <div class="container"> -->
-            <div class="row ">
+            <div class="row mainheader-border">
                 <div class="col-xl-1 col-lg-1">
                     <div class="logo">
                         <a href="index.php">
@@ -204,7 +206,7 @@ include('db_connection.php');
                     <div class="mobile_menu d-block d-lg-none"></div>
                 </div>
             </div>
-            <div class="row" style="background-color:#041e42;padding-bottom:5px;padding-top:5px;">
+            <div class="row mainmenu_style"  >
                 <div class="col-xl-12 col-lg-12 text-center">
                     <!-- <div class="col-xl-7 col-lg-7"> -->
                     <div class="main-menu  d-none d-lg-block">

@@ -104,7 +104,7 @@
                                 <tr>
                                     <td><?php
                                         echo  date(
-                                            'd-m-Y ',
+                                            'd-m-Y',
                                             strtotime(
                                                 $row['event_dt']
                                             )
