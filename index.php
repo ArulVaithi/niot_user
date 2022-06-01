@@ -64,6 +64,12 @@ mst_recruitment_$currentLang  group by title_id   limit 2 ) group by title";
     $resultannualreport = pg_query($db, $annualreport);
     $annualcount = pg_num_rows($resultannualreport);
 
+    $pressrelease =
+        "select title from mst_pressrelease_$currentLang where status= 'L' order by announce_dt desc limit 3";
+    // echo $newsletter;
+    $resultpressrelease = pg_query($db, $pressrelease);
+    $pressreleasecount = pg_num_rows($resultpressrelease);
+
     $newsletter =
         "select title from mst_newsletter_$currentLang where status= 'L' order by announce_dt desc limit 3";
     // echo $newsletter;
@@ -298,7 +304,7 @@ mst_recruitment_$currentLang  group by title_id   limit 2 ) group by title";
 
     <script type="text/javascript">
         $(document).ready(function() {
-          //  load_menu();
+            //  load_menu();
         });
 
         function load_menu() {
@@ -382,129 +388,129 @@ mst_recruitment_$currentLang  group by title_id   limit 2 ) group by title";
         }
 
 
-//         function parseMenu(ul, menuvalue) {
-//             // console.log(data);
-//             // return false;
-//             var data = jQuery.parseJSON(menuvalue);
-//             var getdata = data[0].getdata;
-//             console.log(data[0].getdata[0]);
+        //         function parseMenu(ul, menuvalue) {
+        //             // console.log(data);
+        //             // return false;
+        //             var data = jQuery.parseJSON(menuvalue);
+        //             var getdata = data[0].getdata;
+        //             console.log(data[0].getdata[0]);
 
-//             // var data = jQuery.parseJSON(data);
-//             // var menu = data;
+        //             // var data = jQuery.parseJSON(data);
+        //             // var menu = data;
 
-//             // var data = data[0].getdata;
-//             // console.log(data[0].getdata[0].menu.length);
-//             // for (var i = 0; i < menu_data[0].getdata[0].menu.length; i++) {
-//             //     console.log(menu_data[0].getdata[0].menu[i]);
-//             //     alert();
-//             //     var root_menu = menu_data[0].getdata[0].menu[i];
-//             //     var li = $('<li><a href="' + menu_data[0].getdata[0].menu[i].Link + '">' + menu_data[0].getdata[0].menu[i].name + '</a></li>').appendTo(ul);
-//             //     console.log(root_menu.Menus);
-//             //     // If sub menus contain something 
-//             //     if (menu_data[0].getdata[0].menu[i].Menus != null) {
-//             //         var subul = $('<ul id="submenu-' + menu_data[0].getdata[0].menu[i].Menus.Link + '" class="submenu"></ul>');
-//             //         $(li).append(subul);
-//             //         parseMenu($(subul), menu_data[0].getdata[0].menu[i].Menus);
-//             //     } else {
-//             //         $(li).removeClass('submenu');
-//             //     }
+        //             // var data = data[0].getdata;
+        //             // console.log(data[0].getdata[0].menu.length);
+        //             // for (var i = 0; i < menu_data[0].getdata[0].menu.length; i++) {
+        //             //     console.log(menu_data[0].getdata[0].menu[i]);
+        //             //     alert();
+        //             //     var root_menu = menu_data[0].getdata[0].menu[i];
+        //             //     var li = $('<li><a href="' + menu_data[0].getdata[0].menu[i].Link + '">' + menu_data[0].getdata[0].menu[i].name + '</a></li>').appendTo(ul);
+        //             //     console.log(root_menu.Menus);
+        //             //     // If sub menus contain something 
+        //             //     if (menu_data[0].getdata[0].menu[i].Menus != null) {
+        //             //         var subul = $('<ul id="submenu-' + menu_data[0].getdata[0].menu[i].Menus.Link + '" class="submenu"></ul>');
+        //             //         $(li).append(subul);
+        //             //         parseMenu($(subul), menu_data[0].getdata[0].menu[i].Menus);
+        //             //     } else {
+        //             //         $(li).removeClass('submenu');
+        //             //     }
 
-//             // }
+        //             // }
 
-//             console.log(data[0].getdata[0].menu);
-//             // for (var i = 0, j = data[0].getdata[0].menu.length; i < j; i++) {
-//             //     var root_menu = data[0].getdata[0].menu[i];
+        //             console.log(data[0].getdata[0].menu);
+        //             // for (var i = 0, j = data[0].getdata[0].menu.length; i < j; i++) {
+        //             //     var root_menu = data[0].getdata[0].menu[i];
 
-//             //     if (root_menu.hasOwnProperty("id")) {
-//             //         var li = $('<li><a href="' + root_menu.Link + '">' + root_menu.name + '</a></li>').appendTo(ul);
-//             //         if (root_menu.hasOwnProperty("Menus") && root_menu.Menus.length > 0) {
+        //             //     if (root_menu.hasOwnProperty("id")) {
+        //             //         var li = $('<li><a href="' + root_menu.Link + '">' + root_menu.name + '</a></li>').appendTo(ul);
+        //             //         if (root_menu.hasOwnProperty("Menus") && root_menu.Menus.length > 0) {
 
-//             //             var subul = $('<ul id="submenu-' + root_menu.Menus.Link + '" class="submenu"></ul>');
-//             //             $(li).append(subul);
-//             //             console.log(root_menu.Menus);
-//             //             parseMenu($(subul), root_menu.Menus[i]);
-//             //         } else {
-//             //             $(li).removeClass('submenu');
-//             //         }
-//             //     }
-//             // }
+        //             //             var subul = $('<ul id="submenu-' + root_menu.Menus.Link + '" class="submenu"></ul>');
+        //             //             $(li).append(subul);
+        //             //             console.log(root_menu.Menus);
+        //             //             parseMenu($(subul), root_menu.Menus[i]);
+        //             //         } else {
+        //             //             $(li).removeClass('submenu');
+        //             //         }
+        //             //     }
+        //             // }
 
-//             // for (var i = 0, j = data[0].getdata[0].menu.length; i < j; i++) {
-//             //     var root_menu = data[0].getdata[0].menu[i];
-//             //     // console.log(root_menu);
-//             //     if (root_menu.hasOwnProperty("id")) {
-//             //         // var li = $('<li><a href="' + root_menu.Link + '">' + root_menu.name + '</a></li>');  
-//             //         $("#navigation").append('<li><a href="' + root_menu.Link + '">' + root_menu.name + '</a>');
-//             //         if (root_menu.hasOwnProperty("Menus") && root_menu.Menus.length > 0) {
-//             //             $("#navigation").append("<ul class='submenu' id='menu_" + root_menu.id + "'>");
-//             //             for (var n = 0, m = root_menu.Menus[0][0].menu.length; n < m; n++) {
-//             //                 var sub_menu = root_menu.Menus[0][0].menu[n];
-//             //                 if (sub_menu.hasOwnProperty("id")) {
-//             //                     console.log('subtext '+sub_menu.name);
-//             //                     $("#menu_" + root_menu.id).append('<li><a href="' + sub_menu.Link + '">' + sub_menu.name + '</a></li>');
+        //             // for (var i = 0, j = data[0].getdata[0].menu.length; i < j; i++) {
+        //             //     var root_menu = data[0].getdata[0].menu[i];
+        //             //     // console.log(root_menu);
+        //             //     if (root_menu.hasOwnProperty("id")) {
+        //             //         // var li = $('<li><a href="' + root_menu.Link + '">' + root_menu.name + '</a></li>');  
+        //             //         $("#navigation").append('<li><a href="' + root_menu.Link + '">' + root_menu.name + '</a>');
+        //             //         if (root_menu.hasOwnProperty("Menus") && root_menu.Menus.length > 0) {
+        //             //             $("#navigation").append("<ul class='submenu' id='menu_" + root_menu.id + "'>");
+        //             //             for (var n = 0, m = root_menu.Menus[0][0].menu.length; n < m; n++) {
+        //             //                 var sub_menu = root_menu.Menus[0][0].menu[n];
+        //             //                 if (sub_menu.hasOwnProperty("id")) {
+        //             //                     console.log('subtext '+sub_menu.name);
+        //             //                     $("#menu_" + root_menu.id).append('<li><a href="' + sub_menu.Link + '">' + sub_menu.name + '</a></li>');
 
-//             //                     /* e.t.c but DONT REPEAT YOURSELF */
-//             //                     /* but if there is 50 levels- what a u going to do? */
-//             //                     /* look at recursive way */
+        //             //                     /* e.t.c but DONT REPEAT YOURSELF */
+        //             //                     /* but if there is 50 levels- what a u going to do? */
+        //             //                     /* look at recursive way */
 
-//             //                 }
-//             //                 $("#menu_" + root_menu.id).append("</ul>");
-//             //             }
-//             //             // $("#menu_"+root_menu.id).append("</li>");
-//             //             $("#navigation").append("</li>");
+        //             //                 }
+        //             //                 $("#menu_" + root_menu.id).append("</ul>");
+        //             //             }
+        //             //             // $("#menu_"+root_menu.id).append("</li>");
+        //             //             $("#navigation").append("</li>");
 
-//             //         }
-//             //     }
-//             // }
+        //             //         }
+        //             //     }
+        //             // }
 
-//             // for (var i = 0, j = data[0].getdata[0].menu.length; i < j; i++) {
-//             //     var root_menu = data[0].getdata[0].menu[i];
-//             //     if (root_menu.hasOwnProperty("id")) {
+        //             // for (var i = 0, j = data[0].getdata[0].menu.length; i < j; i++) {
+        //             //     var root_menu = data[0].getdata[0].menu[i];
+        //             //     if (root_menu.hasOwnProperty("id")) {
 
-//             //         $("#navigation").append("<li><a  href=" + root_menu.Link + ">" + root_menu.name + " <i class='ti-angle-down'></i></a>");
+        //             //         $("#navigation").append("<li><a  href=" + root_menu.Link + ">" + root_menu.name + " <i class='ti-angle-down'></i></a>");
 
-//             //         if (root_menu.hasOwnProperty("Menus") && root_menu.Menus.length > 0) {
+        //             //         if (root_menu.hasOwnProperty("Menus") && root_menu.Menus.length > 0) {
 
-//             //             $("#navigation").append("<li id='menu_" + root_menu.id + "' >");
+        //             //             $("#navigation").append("<li id='menu_" + root_menu.id + "' >");
 
-//             //             for (var n = 0, m = root_menu.Menus[0][0].menu.length; n < m; n++) {
-//             //                 var sub_menu = root_menu.Menus[0][0].menu[n];
-//             //                 console.log(sub_menu);
-//             //                 if (sub_menu.hasOwnProperty("id")) {
-//             //                     $("#menu_" + root_menu.id).append("<ul class='submenu'><li ><a href=" + sub_menu.Link + " >" + sub_menu.name + "</a></li>");
-//             //                 }
-//             //                 // $("#menu_"+ root_menu.id).append("</ul>");
-//             //             }
-//             //             //  $("#menu_"+ root_menu.id).append("");
-//             //             $("#menu_" + root_menu.id + "").append("</ul></li>");
-//             //         }
-//             //         $("#navigation").append("</li>");
-//             //     }
-//             // }
+        //             //             for (var n = 0, m = root_menu.Menus[0][0].menu.length; n < m; n++) {
+        //             //                 var sub_menu = root_menu.Menus[0][0].menu[n];
+        //             //                 console.log(sub_menu);
+        //             //                 if (sub_menu.hasOwnProperty("id")) {
+        //             //                     $("#menu_" + root_menu.id).append("<ul class='submenu'><li ><a href=" + sub_menu.Link + " >" + sub_menu.name + "</a></li>");
+        //             //                 }
+        //             //                 // $("#menu_"+ root_menu.id).append("</ul>");
+        //             //             }
+        //             //             //  $("#menu_"+ root_menu.id).append("");
+        //             //             $("#menu_" + root_menu.id + "").append("</ul></li>");
+        //             //         }
+        //             //         $("#navigation").append("</li>");
+        //             //     }
+        //             // }
 
-//             var mainMenu = "<ul>";
-//             for (var m = 0; m < data[0].getdata[0].menu.length; m++) {
-//                 var root_menu = data[0].getdata[0].menu[m];
-//                 mainMenu += "<li> ";
-//                 mainMenu += "<a href='" + root_menu.Link + "'>" + root_menu.name + "</a>";
-//                 if (root_menu.Menus.length > 0) {
+        //             var mainMenu = "<ul>";
+        //             for (var m = 0; m < data[0].getdata[0].menu.length; m++) {
+        //                 var root_menu = data[0].getdata[0].menu[m];
+        //                 mainMenu += "<li> ";
+        //                 mainMenu += "<a href='" + root_menu.Link + "'>" + root_menu.name + "</a>";
+        //                 if (root_menu.Menus.length > 0) {
 
-//                     mainMenu += "<ul class='submenu'>";
-//                     for (var n = 0; n < root_menu.Menus[0][0].menu.length; n++) {
+        //                     mainMenu += "<ul class='submenu'>";
+        //                     for (var n = 0; n < root_menu.Menus[0][0].menu.length; n++) {
 
-//                         var sub_menu = root_menu.Menus[0][0].menu[n];
-//                         mainMenu += "<li>";
-//                         mainMenu += "<a href='" + sub_menu.Link + "'>" + sub_menu.name + "</a>";
-//                         mainMenu += "</li>";
-//                     }
-//                     mainMenu += "</ul>";
-//                 }
-//                 mainMenu += "</li>";
-//             }
-// mainMenu += "<li><a href='#'><button class='navbar-toggler' onclick='openNav()' type='button' data-toggle='collapse' data-target='#sidebarMenu' aria-controls='sidebarMenu' aria-expanded='false' aria-label='Toggle navigation'><i class='fa fa-bars' style='color:#fff;'></i></button></a></li>"
-//             document.getElementById("navigation").innerHTML = mainMenu;
-//             //$('#navigation').append('<button class="navbar-toggler" onclick="openNav()" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars" style="color:#fff;"></i></button>');
-//         }
+        //                         var sub_menu = root_menu.Menus[0][0].menu[n];
+        //                         mainMenu += "<li>";
+        //                         mainMenu += "<a href='" + sub_menu.Link + "'>" + sub_menu.name + "</a>";
+        //                         mainMenu += "</li>";
+        //                     }
+        //                     mainMenu += "</ul>";
+        //                 }
+        //                 mainMenu += "</li>";
+        //             }
+        // mainMenu += "<li><a href='#'><button class='navbar-toggler' onclick='openNav()' type='button' data-toggle='collapse' data-target='#sidebarMenu' aria-controls='sidebarMenu' aria-expanded='false' aria-label='Toggle navigation'><i class='fa fa-bars' style='color:#fff;'></i></button></a></li>"
+        //             document.getElementById("navigation").innerHTML = mainMenu;
+        //             //$('#navigation').append('<button class="navbar-toggler" onclick="openNav()" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars" style="color:#fff;"></i></button>');
+        //         }
 
 
 

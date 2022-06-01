@@ -19,7 +19,7 @@
   <!-- <link rel="stylesheet" href="css/aos.css"> -->
   <link rel="stylesheet" href="css/datatable/dataTables.bootstrap4.min.css">
   <link rel="stylesheet" href="css/datatable/responsive.bootstrap4.min.css">
-  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <link rel="stylesheet" href="css/style.css">
   <!-- <link rel="stylesheet" href="css/darktheme.css"> -->
   <!-- Select 2 css -->
   <link rel="stylesheet" href="css/select2/dist/css/select2.min.css" />

@@ -3384,6 +3384,34 @@ table th tr td {
     /* line-height:2; */
 }
 
+.service_area .publication_card_blue .single_service .icon i {
+    font-size: 25px;
+    color: #fff44f;
+  }
+  .service_area .publication_card .single_service .icon i {
+    font-size: 25px;
+    color: #fff44f;
+  }
+  /* line 15, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_service.scss */
+  .service_area .publication_card_blue .single_service h3 {
+    font-size: 26px;
+    font-weight: 500;
+    color: #fff44f;
+  }
+  
+  .service_area .publication_card .single_service h3 {
+    font-size: 26px;
+    font-weight: 500;
+    color: #fff44f;
+  }
+  
+  .service_area .publication_card .single_service ul li {
+    font-size: 12pt;
+    /* font-weight: 500; */
+    color: #fff44f;
+    /* line-height:2; */
+  }
+
 @media (min-width: 768px) and (max-width: 991px) {
 
     /* line 15, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_service.scss */
@@ -7924,6 +7952,18 @@ a:hover {
     .card-grid {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .card__content {
+        background: #111;
+        left: 0;
+        padding: var(--spacing-l);
+        position: absolute;
+        /* top: 0; */
+        padding-top: 20px;
+        width: 100%;
+        /* height: 50%; */
+        border: 1px solid #fff44f;
+    }
 }
 
 @media (min-width: 769px) and (min-width: 1024px) {
@@ -8001,7 +8041,7 @@ a:hover {
         /* top: 0; */
         padding-top: 20px;
         width: 100%;
-        height: 50%;
+        /* height: 50%; */
         border: 1px solid #fff44f;
     }
 }
@@ -8931,13 +8971,13 @@ input[type="checkbox"]:checked~.sidebarIconToggle>.diagonal.part-2 {
 
 .inside-page__btn {
     background-color: transparent;
-    border: 3px solid;
+    /* border: 3px solid; */
     border-radius: 0.5rem;
     font-size: 1.2rem;
     font-weight: 600;
     /* margin-top: 2rem; */
     overflow: hidden;
-    padding: 0.7rem 0.75rem;
+    /* padding: 0.7rem 0.75rem; */
     position: relative;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -9031,7 +9071,7 @@ input[type="checkbox"]:checked~.sidebarIconToggle>.diagonal.part-2 {
     height: 100%;
     justify-content: center;
     width: 100%;
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 /* A container to hold the flip card and the inside page */
@@ -12454,4 +12494,24 @@ hr {
     left: 25%;
     border: 0;
     border-top: 1px solid #fff44f;
+}
+
+.alignright
+{
+  position: absolute;
+  right:    0;
+  bottom:   0;
+  padding-left:20px;
+}
+
+.flipcard_list
+{
+  text-align:start;
+  display: block;
+  position:relative
+}
+.flipcard_list li a 
+{
+  font-size:16pt;
+  font-weight:500;
 }

@@ -170,7 +170,7 @@
       <div class="container">
           <div class="row wow zoomIn">
               <div class="col-xl-12">
-                  <div class="doctors_title mb-55 text-center">
+                  <div class="section_title mb-55 text-center">
                       <h3 >हमारे प्रमुख</h3>
                   </div>
               </div>
@@ -178,7 +178,7 @@
           <div class="row ">
               <div class="col-lg-12">
                   <div class="card-grid">
-                      <a class="leadercard wow fadeInLeftBig" href="niot_minister.php">
+                      <a class="leadercard wow fadeInUp" data-wow-delay="0.1s" href="niot_minister.php">
                           <div class="card__background" style="background-image:url(img/leaders/minister_new.jpg)">
                               <!-- <img src="img/leaders/leader1.jpg" alt=""> -->
                           </div>
@@ -191,7 +191,7 @@
                               <!-- </div> -->
                           </div>
                       </a>
-                      <a class="leadercard wow zoomInUp" href="niot_secretary.php">
+                      <a class="leadercard wow fadeInUp" data-wow-delay="0.2s"  href="niot_secretary.php">
                           <div class="card__background" style="background-image: url(img/leaders/leader2.jpg)"></div>
                           <div class="card__content text-center">
                               <h3>डॉ.एम.रविचंद्रन</h3>
@@ -199,7 +199,7 @@
                               </span>
                           </div>
                       </a>
-                      <a class="leadercard  wow fadeInRightBig" href="niot_director.php">
+                      <a class="leadercard  wow fadeInUp" data-wow-delay="0.3s"  href="niot_director.php">
                           <div class="card__background" style="background-image: url(img/leaders/leader3.jpg)"></div>
                           <div class="card__content text-center">
                               <h3>डॉ. जी ए रामदास</h3>
@@ -224,7 +224,7 @@
         <div class="container">
             <div class="row wow zoomIn">
                 <div class="col-xl-12">
-                    <div class="doctors_title mb-55 text-center">
+                    <div class="section_title mb-55 text-center">
                         <h3>Our Leaders</h3>
                     </div>
                 </div>

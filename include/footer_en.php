@@ -308,7 +308,7 @@
                 <div class=" row ">
                     <div class="col-lg-12 ">
                         <div class="  text-center middleContent"> © Content Owned and Maintained by National Institute of Ocean Technology (NIOT), </br> Website Designed, Developed and Hosted By<a href="http://www.nic.in/" target="_blank"> National Informatics Centre (NIC) </a>,
-                            <a href="http://meity.gov.in/" target="_blank"> Ministry of Electronics & Information Technology,</a>, Government of India
+                            <a href="http://meity.gov.in/" target="_blank"> Ministry of Electronics & Information Technology</a>, Government of India
                         </div>
                     </div>
                     <div class="col-lg-12 ">

@@ -531,15 +531,15 @@
     $this.data("orig-size", $this.css("font-size"));
   });
 
-  $("#btn-increase").click(function () {
+  $("#btn-increase1").click(function () {
     changeFontSize(1);
   });
 
-  $("#btn-decrease").click(function () {
+  $("#btn-decrease1").click(function () {
     changeFontSize(-1);
   });
 
-  $("#btn-orig").click(function () {
+  $("#btn-orig1").click(function () {
     $affectedElements.each(function () {
       var $this = $(this);
 

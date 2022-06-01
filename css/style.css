@@ -819,7 +819,7 @@ table th tr td {
     font-size: 36px;
     line-height: 42px;
   }
-  
+
 }
 
 @media (max-width: 767px) {
@@ -3216,10 +3216,10 @@ table th tr td {
   margin-top: 5px;
   margin-bottom: 10px;
 }
-.bottomlearn_more
-{
+
+.bottomlearn_more {
   color: #fff;
-  float:right;
+  float: right;
 }
 
 /* line 40, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_department.scss */
@@ -3363,21 +3363,22 @@ table th tr td {
 }
 
 /* line 15, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_service.scss */
- .service_area .publication_card_blue .single_service h3 {
+.service_area .publication_card_blue .single_service h3 {
   font-size: 26px;
   font-weight: 500;
   color: #fff;
 }
 
- .service_area .publication_card .single_service h3 {
+.service_area .publication_card .single_service h3 {
   font-size: 26px;
   font-weight: 500;
   color: #041e42;
 }
-.service_area .single_service ul li {
+
+.service_area .publication_card .single_service ul li {
   font-size: 12pt;
   /* font-weight: 500; */
-  color: #fff;
+  color: #041e42;
   /* line-height:2; */
 }
 
@@ -3434,7 +3435,7 @@ table th tr td {
 }
 
 /* line 12, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_experts.scss */
- .doctors_title h3 {
+.doctors_title h3 {
   font-size: 36px;
   font-weight: 500;
   color: #fff;
@@ -7993,7 +7994,7 @@ a:hover {
     /* top: 0; */
     padding-top: 20px;
     width: 100%;
-    height: 50%;
+    /* height: 50%; */
   }
 }
 
@@ -8910,13 +8911,13 @@ input[type="checkbox"]:checked~.sidebarIconToggle>.diagonal.part-2 {
 
 .inside-page__btn {
   background-color: transparent;
-  border: 3px solid;
+  /* border: 3px solid; */
   border-radius: 0.5rem;
-  font-size: 1.2rem;
+  font-size: 15pt;
   font-weight: 600;
   /* margin-top: 2rem; */
   overflow: hidden;
-  padding: 0.7rem 0.75rem;
+  /* padding: 0.7rem 0.75rem; */
   position: relative;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -8934,6 +8935,7 @@ input[type="checkbox"]:checked~.sidebarIconToggle>.diagonal.part-2 {
   transition: all 0.3s ease;
   width: 100%;
   z-index: -1;
+
 }
 
 .inside-page__btn--city {
@@ -9010,7 +9012,7 @@ input[type="checkbox"]:checked~.sidebarIconToggle>.diagonal.part-2 {
   height: 100%;
   justify-content: center;
   width: 100%;
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 /* A container to hold the flip card and the inside page */
@@ -9805,9 +9807,11 @@ input[type="checkbox"]:checked~.sidebarIconToggle>.diagonal.part-2 {
 .footerpolicy a {
   padding-right: 10px;
 }
+
 .footerpolicy i {
-  color:#fff;
+  color: #fff;
 }
+
 .footerpolicy span {
   padding-right: 10px;
   color: #fff;
@@ -11472,24 +11476,24 @@ section.resume-section .resume-item .resume-date {
   /* position: -webkit-sticky; */
 }
 
-section.resume-section h2
-{
-    color:#111;
+section.resume-section h2 {
+  color: #111;
 }
-.subheading 
-{
-    color:#fff;
+
+.subheading {
+  color: #fff;
 }
-.areaspecial
-{
-  background:#fff;
-  border-color: #ffc107; 
+
+.areaspecial {
+  background: #fff;
+  border-color: #ffc107;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);
 }
-.areaspecialbox
-{
+
+.areaspecialbox {
   background: #fff;
 }
+
 .quick-menu {
   padding: 8px 0;
 }
@@ -11540,7 +11544,7 @@ section.resume-section h2
 .quick-1st>li:hover>a,
 .quick-1st>li.active>a {
   color: #fff;
-  font-size:13pt;
+  font-size: 13pt;
 }
 
 .quick-1st>li:hover>a:before,
@@ -12379,7 +12383,26 @@ input[id="radio-3"]:checked~.glider {
   visibility: visible;
 }
 
-.indexaboutlist li a  b
-{
-   color:#fff;
+.indexaboutlist li a b {
+  color: #fff;
 }
+
+.alignright {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+.flipcard_list
+{
+  text-align:start;
+  display: block;
+  position:relative
+}
+.flipcard_list li a 
+{
+  font-size:16pt;
+  font-weight:500;
+}
+

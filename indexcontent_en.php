@@ -26,7 +26,7 @@
 
                                        <?php if ($announcecount == 0) { ?>
                                            <ul class="bulletstyle">
-                                               <li > No Data Found</li>
+                                               <li> No Data Found</li>
                                            </ul>
                                        <?php
                                         } else { ?>
@@ -54,9 +54,9 @@
                <div class="col-xl-4 col-md-4 wow zoomInUp publication_card_blue">
                    <div class="single_service">
                        <div class="icon">
-                           <i class="fa fa-bullhorn" ></i>
+                           <i class="fa fa-bullhorn"></i>
                        </div>
-                       <h3 >Events</h3>
+                       <h3>Events</h3>
                        <!-- <br> -->
                        <!-- <ul class="bulletstylewhite"> -->
                        <div class="page">
@@ -65,7 +65,7 @@
                                    <marquee onMouseOver="this.stop()" onMouseOut="this.start()" class="" width="100%" style="padding-left:20px;" direction="up" height="100%">
                                        <?php if ($eventcount == 0) { ?>
                                            <ul class="bulletstylewhite">
-                                               <li > No Data Found</li>
+                                               <li> No Data Found</li>
                                            </ul>
                                        <?php
                                         } else {
@@ -102,7 +102,7 @@
                        <h3>Recruitment</h3>
                        <?php if ($reccount == 0) { ?>
                            <ul class="bulletstyle">
-                               <li > No Data Found</li>
+                               <li> No Data Found</li>
                            </ul>
                        <?php
                         } else {
@@ -148,10 +148,10 @@
                        </h2>
                        <p>The National Institute of Ocean Technology (NIOT) was established in November 1993 as an autonomous society under the Ministry of Earth Sciences, Government of India. NIOT is managed by a Governing Council and the Director is the head of the Institute. Major aim of starting NIOT under the Ministry of Earth Sciences, is to develop reliable indigenous technologies to solve the various engineering problems associated with harvesting of non-living and living resources in the Indian Exclusive Economic Zone (EEZ), which is about two-thirds of the land area of India.</p>
                        <ul class="bulletstyle indexaboutlist">
-                           <li> <a href="about.php"><b >Vision</b> </a></li>
-                           <li> <a href="about.php"><b >Mission Statement</b> </a>
+                           <li> <a href="about.php"><b>Vision</b> </a></li>
+                           <li> <a href="about.php"><b>Mission Statement</b> </a>
                            </li>
-                           <li> <a href="about.php"><b >Key Objectives</b> </a> </li>
+                           <li> <a href="about.php"><b>Key Objectives</b> </a> </li>
                        </ul>
                        <a href="about.php" class="boxed-btn3-white-2">Learn More</a>
                    </div>
@@ -164,15 +164,15 @@
        <div class="container">
            <div class="row wow zoomIn">
                <div class="col-xl-12">
-                   <div class="doctors_title mb-55 text-center">
-                       <h3 >Our Leaders</h3>
+                   <div class="section_title mb-55 text-center">
+                       <h3>Our Leaders</h3>
                    </div>
                </div>
            </div>
            <div class="row ">
                <div class="col-lg-12">
                    <div class="card-grid">
-                       <a class="leadercard wow fadeInLeftBig" href="niot_minister.php">
+                       <a class="leadercard wow fadeInUp" data-wow-delay="0.1s" href="niot_minister.php">
                            <div class="card__background" style="background-image:url(img/leaders/minister_new.jpg)">
                                <!-- <img src="img/leaders/leader1.jpg" alt=""> -->
                            </div>
@@ -185,14 +185,14 @@
                                <!-- </div> -->
                            </div>
                        </a>
-                       <a class="leadercard wow zoomInUp" href="niot_secretary.php">
+                       <a class="leadercard wow fadeInUp" data-wow-delay="0.2s" href="niot_secretary.php">
                            <div class="card__background" style="background-image: url(img/leaders/leader2.jpg)"></div>
                            <div class="card__content text-center">
                                <h3>Dr.M.Ravichandran</h3>
                                <span>Secretary, Ministry of Earth Sciences (MoES)</span>
                            </div>
                        </a>
-                       <a class="leadercard  wow fadeInRightBig" href="niot_director.php">
+                       <a class="leadercard  wow fadeInUp" data-wow-delay="0.3s" href="niot_director.php">
                            <div class="card__background" style="background-image: url(img/leaders/leader3.jpg)"></div>
                            <div class="card__content text-center">
                                <h3>Dr. G A RAMADASS</h3>
@@ -273,12 +273,12 @@
                <div class="col-xl-12">
                    <div class="section_title text-center mb-55">
                        <h3>Technology</h3>
-                       <p ></p>
+                       <p></p>
                    </div>
                </div>
            </div>
-           <div class="row wow bounceInRight">
-               <div class="col-xl-4 col-md-6 col-lg-4">
+           <div class="row ">
+               <div class="col-xl-4 col-md-6 col-lg-4 wow zoomIn" data-wow-delay="0.1s">
                    <div class="single_department">
                        <div class="department_thumb">
                            <img src="img/department/tech_1.jpg" alt="">
@@ -292,7 +292,7 @@
                        </div>
                    </div>
                </div>
-               <div class="col-xl-4 col-md-6 col-lg-4">
+               <div class="col-xl-4 col-md-6 col-lg-4 wow zoomIn" data-wow-delay="0.2s">
                    <div class="single_department">
                        <div class="department_thumb">
                            <img src="img/department/tech_2.jpg" alt="">
@@ -306,7 +306,7 @@
                        </div>
                    </div>
                </div>
-               <div class="col-xl-4 col-md-6 col-lg-4">
+               <div class="col-xl-4 col-md-6 col-lg-4 wow zoomIn" data-wow-delay="0.1s">
                    <div class="single_department">
                        <div class="department_thumb">
                            <img src="img/department/tech_3.jpg" alt="">
@@ -318,7 +318,7 @@
                        </div>
                    </div>
                </div>
-               <div class="col-xl-4 col-md-6 col-lg-4">
+               <div class="col-xl-4 col-md-6 col-lg-4 wow zoomIn" data-wow-delay="0.1s">
                    <div class="single_department">
                        <div class="department_thumb">
                            <img src="img/department/tech_4.jpg" alt="">
@@ -330,7 +330,7 @@
                        </div>
                    </div>
                </div>
-               <div class="col-xl-4 col-md-6 col-lg-4">
+               <div class="col-xl-4 col-md-6 col-lg-4 wow zoomIn" data-wow-delay="0.2s">
                    <div class="single_department">
                        <div class="department_thumb">
                            <img src="img/department/tech_5.jpg" alt="">
@@ -342,7 +342,7 @@
                        </div>
                    </div>
                </div>
-               <div class="col-xl-4 col-md-6 col-lg-4">
+               <div class="col-xl-4 col-md-6 col-lg-4 wow zoomIn" data-wow-delay="0.1s">
                    <div class="single_department">
                        <div class="department_thumb">
                            <img src="img/department/tech_6.png" alt="">
@@ -611,13 +611,14 @@
                        <!-- Card: City -->
                        <!-- <div class="row">
                             <div class="col-12"> -->
-                       <section class="card-section wow bounceInLeft">
-                           <div class="techcard">
-                               <div class="flip-card">
-                                   <div class="flip-card__container">
-                                       <div class="card-front">
-                                           <div class="card-front__tp card-front__tp--city">
-                                               <!-- <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" class="card-front__icon">
+                       <div class="col-lg-4">
+                           <section class="card-section wow bounceInLeft" data-wow-delay="0.2s">
+                               <div class="techcard">
+                                   <div class="flip-card">
+                                       <div class="flip-card__container">
+                                           <div class="card-front">
+                                               <div class="card-front__tp card-front__tp--city">
+                                                   <!-- <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" class="card-front__icon">
                                                     <g>
                                                         <path d="M49.7,22c-1.1,0-2,0.9-2,2v32.2c0,1.1,0.9,2,2,2s2-0.9,2-2V24C51.7,22.9,50.8,22,49.7,22z" />
                                                         <path d="M13,29.5c1.1,0,2-0.9,2-2s-0.9-2-2-2H5.7v-3h20.8c1.1,0,2-0.9,2-2s-0.9-2-2-2H5.7v-3h20.8c1.1,0,2-0.9,2-2s-0.9-2-2-2H5.7
@@ -638,53 +639,70 @@
                                                     </g>
                                                 </svg> -->
 
-                                               <h2 class="card-front__heading">
-                                                   Press Release
-                                               </h2>
-                                               <!-- <p class="card-front__text-price">
+                                                   <h2 class="card-front__heading">
+                                                       Press Release
+                                                   </h2>
+                                                   <!-- <p class="card-front__text-price">
                                                     From £29
                                                 </p> -->
-                                           </div>
+                                               </div>
 
-                                           <div class="card-front__bt">
-                                               <p class="card-front__text-view card-front__text-view--city">
-                                                   <i class="fa fa-eye"></i> View Here
-                                               </p>
+                                               <div class="card-front__bt">
+                                                   <p class="card-front__text-view card-front__text-view--city">
+                                                       <i class="fa fa-eye"></i> View Here
+                                                   </p>
+                                               </div>
+                                           </div>
+                                           <div class="card-back">
+                                               <video class="video__container" autoplay muted loop>
+                                                   <source class="video__media" src="https://player.vimeo.com/external/370331493.sd.mp4?s=e90dcaba73c19e0e36f03406b47bbd6992dd6c1c&profile_id=139&oauth2_token_id=57447761" type="video/mp4">
+                                               </video>
                                            </div>
                                        </div>
-                                       <div class="card-back">
-                                           <video class="video__container" autoplay muted loop>
-                                               <source class="video__media" src="https://player.vimeo.com/external/370331493.sd.mp4?s=e90dcaba73c19e0e36f03406b47bbd6992dd6c1c&profile_id=139&oauth2_token_id=57447761" type="video/mp4">
-                                           </video>
+                                   </div>
+
+                                   <div class="inside-page">
+                                       <div class="inside-page__container">
+                                           <h3 class="inside-page__heading inside-page__heading--city">
+                                               Press Release
+                                           </h3>
+                                           <?php if ($pressreleasecount == 0) { ?>
+                                               <ul class="bulletstyle">
+                                                   <li> No Data Found</li>
+                                               </ul>
+                                           <?php
+                                            } else { ?>
+                                               <ul class=" bulletstyle flipcard_list" > <?php
+                                                                                                                                    $i = 0;
+                                                                                                                                    while ($row = pg_fetch_array($resultpressrelease)) { ?>
+
+                                                       <li>
+                                                           <a href="pressrelease_details.php" target="_blank"> <?php echo $row['title']; ?> </a>
+                                                       </li>
+                                                   <?php   }
+                                                    ?>
+                                               </ul>
+                                           <?php
+                                            } ?>
+                                           <div class="alignright">
+                                               <a href="pressrelease_details.php" class="inside-page__btn inside-page__btn--city">View details</a>
+                                           </div>
                                        </div>
                                    </div>
                                </div>
-
-                               <div class="inside-page">
-                                   <div class="inside-page__container">
-                                       <h3 class="inside-page__heading inside-page__heading--city">
-                                           Press Release
-                                       </h3>
-                                       <u1 class="bulletstyle" style="text-align:start;display: block;position:relative">
-                                           <li><a href="#"> samudrika magazines 4th edition</a></li>
-                                           <li><a href="#"> eSamudrika September2020 Edition</a></li>
-                                           <li><a href="#"> PRESS BRIEF ON LAUNCHING OF FLOOD WARNING SYSTEM FOR MUMBAI-ENGLISH</a></li>
-                                       </u1>
-                                       <a href="pressrelease_details.php" class="inside-page__btn inside-page__btn--city">View details</a>
-                                   </div>
-                               </div>
-                           </div>
-                       </section>
+                           </section>
+                       </div>
                        <!-- </div> -->
 
                        <!-- Card: Ski -->
-                       <section class="card-section wow bounceInUp">
-                           <div class="techcard">
-                               <div class="flip-card">
-                                   <div class="flip-card__container">
-                                       <div class="card-front">
-                                           <div class="card-front__tp card-front__tp--ski">
-                                               <!-- <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" class="card-front__icon">
+                       <div class="col-lg-4">
+                           <section class="card-section wow bounceInUp" data-wow-delay="0.1s">
+                               <div class="techcard">
+                                   <div class="flip-card">
+                                       <div class="flip-card__container">
+                                           <div class="card-front">
+                                               <div class="card-front__tp card-front__tp--ski">
+                                                   <!-- <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" class="card-front__icon">
                                                     <g>
                                                         <path d="M58.8,54.5L38.5,19.3c-0.4-0.6-1-1-1.7-1s-1.4,0.4-1.7,1L14.8,54.5c-0.4,0.6-0.4,1.4,0,2c0.4,0.6,1,1,1.7,1h40.6
                                        c0.7,0,1.4-0.4,1.7-1C59.2,55.9,59.2,55.1,58.8,54.5z M36.8,24.3l5.8,10c-0.5-0.2-1.1-0.3-1.7-0.3c-2.5,0-3.7,1.5-4.6,2.5
@@ -706,50 +724,67 @@
                                        c-0.8,0-1.5,0.7-1.5,1.5S39.9,12.3,40.7,12.3z" />
                                                     </g>
                                                 </svg> -->
-                                               <h2 class="card-front__heading">
-                                                   News Letter
-                                               </h2>
+                                                   <h2 class="card-front__heading">
+                                                       News Letter
+                                                   </h2>
+                                               </div>
+
+                                               <div class="card-front__bt">
+                                                   <p class="card-front__text-view card-front__text-view--ski">
+                                                       <i class="fa fa-eye"></i> View Here
+                                                   </p>
+                                               </div>
                                            </div>
 
-                                           <div class="card-front__bt">
-                                               <p class="card-front__text-view card-front__text-view--ski">
-                                                   <i class="fa fa-eye"></i> View Here
-                                               </p>
+                                           <div class="card-back">
+                                               <video class="video__container" autoplay muted loop>
+                                                   <source class="video__media" src="https://player.vimeo.com/external/195913085.sd.mp4?s=7c12f7a83de62a8900fd2ae049297070b9bc8a54&profile_id=164&oauth2_token_id=574477611" type="video/mp4">
+                                               </video>
                                            </div>
                                        </div>
+                                   </div>
 
-                                       <div class="card-back">
-                                           <video class="video__container" autoplay muted loop>
-                                               <source class="video__media" src="https://player.vimeo.com/external/195913085.sd.mp4?s=7c12f7a83de62a8900fd2ae049297070b9bc8a54&profile_id=164&oauth2_token_id=574477611" type="video/mp4">
-                                           </video>
+
+                                   <div class="inside-page">
+                                       <div class="inside-page__container">
+                                           <h3 class="inside-page__heading inside-page__heading--ski">
+                                               News Letter
+                                           </h3>
+                                           <?php if ($newscount == 0) { ?>
+                                               <ul class="bulletstyle">
+                                                   <li> No Data Found</li>
+                                               </ul>
+                                           <?php
+                                            } else { ?>
+                                               <ul class=" bulletstyle flipcard_list" > <?php
+                                                                                                                                    $i = 0;
+                                                                                                                                    while ($row = pg_fetch_array($resultnewsletter)) { ?>
+
+                                                       <li>
+                                                           <a href="newsletter_details.php" target="_blank"> <?php echo $row['title']; ?> </a>
+                                                       </li>
+                                                   <?php   }
+                                                    ?>
+                                               </ul>
+                                           <?php
+                                            } ?>
+                                           <div class="alignright">
+                                               <a href="newsletter_details.php" class="inside-page__btn inside-page__btn--ski">View Details</a>
+                                           </div>
                                        </div>
                                    </div>
                                </div>
-
-                               <div class="inside-page">
-                                   <div class="inside-page__container">
-                                       <h3 class="inside-page__heading inside-page__heading--ski">
-                                           News Letter
-                                       </h3>
-                                       <u1 class="bulletstyle" style="text-align:start;display: block;position:relative">
-                                           <li><a href="#"> samudrika magazines 4th edition</a></li>
-                                           <li><a href="#"> eSamudrika September2020 Edition</a></li>
-                                           <li><a href="#"> PRESS BRIEF ON LAUNCHING OF FLOOD WARNING SYSTEM FOR MUMBAI-ENGLISH</a></li>
-                                       </u1>
-                                       <a href="newsletter_details.php" class="inside-page__btn inside-page__btn--ski">View Details</a>
-                                   </div>
-                               </div>
-                           </div>
-                       </section>
-
+                           </section>
+                       </div>
                        <!-- Card: Beach -->
-                       <section class="card-section wow bounceInRight">
-                           <div class="techcard">
-                               <div class="flip-card">
-                                   <div class="flip-card__container">
-                                       <div class="card-front">
-                                           <div class="card-front__tp card-front__tp--beach">
-                                               <!-- <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" class="card-front__icon">
+                       <div class="col-lg-4">
+                           <section class="card-section wow bounceInRight" data-wow-delay="0.2s">
+                               <div class="techcard">
+                                   <div class="flip-card">
+                                       <div class="flip-card__container">
+                                           <div class="card-front">
+                                               <div class="card-front__tp card-front__tp--beach">
+                                                   <!-- <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" class="card-front__icon">
                                                     <path d="M57.2,28h-7.4c-0.4-4-2-7.7-4.4-10.6l3.2-3.2c0.8-0.8,0.8-2,0-2.8c-0.8-0.8-2-0.8-2.8,0l-3.2,3.2c-3-2.4-6.6-4-10.6-4.4V2.8
                                    c0-1.1-0.9-2-2-2s-2,0.9-2,2v7.4c-4,0.4-7.7,2-10.6,4.4l-3.2-3.2c-0.8-0.8-2-0.8-2.8,0c-0.8,0.8-0.8,2,0,2.8l3.2,3.2
                                    c-2.4,3-4,6.6-4.4,10.6H2.8c-1.1,0-2,0.9-2,2s0.9,2,2,2h7.4c0.4,4,2,7.7,4.4,10.6l-3.2,3.2c-0.8,0.8-0.8,2,0,2.8
@@ -759,44 +794,62 @@
                                    C45.9,38.8,38.8,45.9,30,45.9z" />
                                                 </svg> -->
 
-                                               <h2 class="card-front__heading">
-                                                   Annual Reports
-                                               </h2>
-                                               <!-- <p class="card-front__text-price">
+                                                   <h2 class="card-front__heading">
+                                                       Annual Reports
+                                                   </h2>
+                                                   <!-- <p class="card-front__text-price">
                                                     From £229
                                                 </p> -->
-                                           </div>
+                                               </div>
 
-                                           <div class="card-front__bt">
-                                               <p class="card-front__text-view card-front__text-view--beach">
-                                                   <i class="fa fa-eye"></i> View Here
-                                               </p>
+                                               <div class="card-front__bt">
+                                                   <p class="card-front__text-view card-front__text-view--beach">
+                                                       <i class="fa fa-eye"></i> View Here
+                                                   </p>
+                                               </div>
+                                           </div>
+                                           <div class="card-back">
+                                               <video class="video__container" autoplay muted loop>
+                                                   <source class="video__media" src="https://player.vimeo.com/external/332588783.sd.mp4?s=cab1817146dd72daa6346a1583cc1ec4d9e677c7&profile_id=139&oauth2_token_id=57447761" type="video/mp4">
+                                               </video>
                                            </div>
                                        </div>
-                                       <div class="card-back">
-                                           <video class="video__container" autoplay muted loop>
-                                               <source class="video__media" src="https://player.vimeo.com/external/332588783.sd.mp4?s=cab1817146dd72daa6346a1583cc1ec4d9e677c7&profile_id=139&oauth2_token_id=57447761" type="video/mp4">
-                                           </video>
+                                   </div>
+
+                                   <div class="inside-page">
+                                       <div class="inside-page__container">
+                                           <h3 class="inside-page__heading inside-page__heading--beach">
+                                               Annual Reports
+                                           </h3>
+                                           <?php if ($annualcount == 0) { ?>
+                                               <ul class="bulletstyle">
+                                                   <li> No Data Found</li>
+                                               </ul>
+                                           <?php
+                                            } else { ?>
+                                               <ul class=" bulletstyle flipcard_list "> <?php
+                                                                                                                                    $i = 0;
+                                                                                                                                    while ($row = pg_fetch_array($resultannualreport)) { ?>
+
+                                                       <li>
+                                                           <a href="annualreports_details.php" target="_blank"> <?php echo $row['title']; ?> </a>
+                                                       </li>
+                                                   <?php   }
+                                                    ?>
+                                               </ul>
+                                           <?php
+                                            } ?>
+                                           <div class="alignright">
+                                               <a href="annualreports_details.php" class="inside-page__btn inside-page__btn--beach">View Details</a>
+                                           </div>
                                        </div>
                                    </div>
                                </div>
-
-                               <div class="inside-page">
-                                   <div class="inside-page__container">
-                                       <h3 class="inside-page__heading inside-page__heading--beach">
-                                           Annual Reports
-                                       </h3>
-                                       <p class="inside-page__text">
-                                           Relax and get sun-kissed tan in the sea or take up surfting for an adventure!
-                                       </p>
-                                       <a href="annualreports_details.php" class="inside-page__btn inside-page__btn--beach">View Details</a>
-                                   </div>
-                               </div>
-                           </div>
-                       </section>
-                       <!-- </div> -->
-
+                           </section>
+                           <!-- </div> -->
+                       </div>
                    </section>
+
                </main>
                <div class="container">
 
@@ -1248,11 +1301,11 @@
         </div>
     </div> -->
 
-       <section  class="portfolio">
+       <section class="portfolio">
            <div class="container" data-aos="fade-up">
                <div class="section_title text-center">
-                   <h3 >Gallery</h3>
-                   <p >Group of NIOT Photos & Videos related to Events , Technologies, Awards etc.</p>
+                   <h3>Gallery</h3>
+                   <p>Group of NIOT Photos & Videos related to Events , Technologies, Awards etc.</p>
                </div>
 
                <div class="row" data-aos="fade-up" data-aos-delay="100">

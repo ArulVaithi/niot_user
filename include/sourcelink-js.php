@@ -25,6 +25,7 @@ if (isset($_SESSION['lang'])) {
 ?>
 <script src="js/vendor/modernizr-3.5.0.min.js"></script>
 <script src="js/vendor/jquery-1.12.4.min.js"></script>
+<script src="js/jquery.cookie.min.js"></script>
 <script src="js/darkmode.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
@@ -57,7 +58,7 @@ if (isset($_SESSION['lang'])) {
 <script src="js/mail-script.js"></script>
 <script src="js/datatable/jquery.dataTables.min.js"></script>
 <script src="js/datatable/dataTables.bootstrap4.min.js"></script>
-
+<script src="js/fontsize_control.js"></script>
 <!-- Select 2 js -->
 <script src="css/select2/dist/js/select2.full.min.js"></script>
 
