@@ -351,7 +351,7 @@ include('db_connection.php');
                                     </a>
                                 </li>
                                 <li class="nav-item sidemenu">
-                                    <a class="sidelink p-1" href="#">
+                                    <a class="sidelink p-1" href="niot_rti.php">
                                         <i class="fa fa-fw fa-dashboard"></i> RTI Documents
                                     </a>
                                 </li>

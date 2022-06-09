@@ -77,8 +77,8 @@ $draftEn = "SELECT * FROM mst_employeescorner_en WHERE  status='L' ORDER BY uplo
                             if ($row['filename'] != '') {
                                 $path = "../niotadmin/uploads/employeescorner/" . $row['filename'] . "";
                             }
-                            if ($row['link'] != '') {
-                                $path = $row['link'];
+                            if ($row['ad_link'] != '') {
+                                $path = $row['ad_link'];
                             }
                         ?>
                             <li>

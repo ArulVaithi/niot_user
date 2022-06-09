@@ -11184,7 +11184,7 @@ section.resume-section .resume-item .resume-date {
 ======================================================*/
 
 #awards {
-    /* background: #111; */
+    background: #111;
 }
 
 #award-box {
@@ -11549,6 +11549,19 @@ section.resume-section .resume-item .resume-date {
     border-radius: 20px;
 }
 
+#admin-quick {
+    /* position: fixed; */
+    /* z-index: 1030; */
+    /* top: 350px; */
+    left: 40px;
+    width: 100%;
+    z-index: 3;
+    cursor: pointer;
+    /* position: sticky; */
+    /* position: -webkit-sticky; */
+    border: 1px solid #fff44f;
+    border-radius: 20px;
+  }
 .subheading {
     color: #fff44f;
 }

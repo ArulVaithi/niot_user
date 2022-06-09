@@ -2585,13 +2585,13 @@ table th tr td {
   background-size: cover;
 }
 
-.bootomfooter {
+.bottomfooter {
   background-repeat: no-repeat;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   /* position: fixed; */
-  /* padding-top:400px; */
+  padding-top:200px;
   height: 50px;
   /* background-color: red; */
   bottom: 0px;
@@ -11476,12 +11476,56 @@ section.resume-section .resume-item .resume-date {
   /* position: -webkit-sticky; */
 }
 
+#admin-quick {
+  /* position: fixed; */
+  /* z-index: 1030; */
+  /* top: 350px; */
+  left: 40px;
+  width: 100%;
+  z-index: 3;
+  cursor: pointer;
+  /* position: sticky; */
+  /* position: -webkit-sticky; */
+}
+.administration_bg
+{
+ 
+}
+
+.admin_title {
+  font-weight: 500;
+  initial-letter: 1.5;
+  text-align: center;
+  color: #111;
+  /* background: #fff; */
+  /* #0086ca */
+}
+
+.admin_hr 
+{
+ 
+  left: 25%;
+  border: 0;
+  border-top: 1px solid #111;
+}
+
+.admin_section 
+{
+  padding-top:10px;
+    font-size: 16px;
+    /* padding-top: 10px; */
+    padding-bottom:100px;
+    padding-left:20px;
+    padding-right:20px;
+    background:#fff;
+    border-radius:20px;
+}
 section.resume-section h2 {
   color: #111;
 }
 
 .subheading {
-  color: #fff;
+  color: #2196f3 ;
 }
 
 .areaspecial {
@@ -11496,6 +11540,73 @@ section.resume-section h2 {
 
 .quick-menu {
   padding: 8px 0;
+}
+.adminquick-menu {
+  padding: 8px 0;
+border-radius:20px;
+  background-color:#fff;
+  border:1px solid #D5D5D5;
+}
+
+.admin_header
+{
+  /* width: 60px; */
+  height: 5px;
+  background-color: #13c3d6;
+  margin: 0 auto 20px auto;
+}
+.adminquick-1st>li {
+  position: relative;
+  font-size: 14px;
+}
+
+.quick-1st>li:before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 3px;
+  width: 1px;
+  height: 100%;
+  background-color: #e0e0e0;
+}
+
+.adminquick-1st>li:last-child:before {
+  display: none;
+}
+
+.adminquick-1st>li>a {
+  position: relative;
+  display: inline-block;
+  padding: 7px 0 8px 18px;
+  line-height: 1.5;
+  color: #222;
+  font-weight: 700;
+  word-break: keep-all;
+  transition: all 0.3s ease;
+}
+
+.adminquick-1st>li>a:before {
+  content: "";
+  position: absolute;
+  z-index: 11;
+  top: 14px;
+  left: -1px;
+  width: 9px;
+  height: 9px;
+  border-radius: 100%;
+  background-color: #111;
+  transition: all 0.3s ease;
+}
+
+.adminquick-1st>li:hover>a,
+.adminquick-1st>li.active>a {
+  color: #13c3d6;
+  font-size: 13pt;
+}
+
+.adminquick-1st>li:hover>a:before,
+.adminquick-1st>li.active>a:before {
+  background-color: #13c3d6;
 }
 
 .quick-1st>li {
@@ -12405,4 +12516,53 @@ input[id="radio-3"]:checked~.glider {
   font-size:16pt;
   font-weight:500;
 }
+
+/* Progress bar */
+#progress-bar {
+  --scrollAmount: 0%; 
+  
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  width: var(--scrollAmount);
+
+  /*  background: linear-gradient(to right, #F24E1E var(--scrollAmount), transparent 0);
+  width: 100%; */
+  
+  height: 25px;
+  /* position: fixed; */
+  top: 0;
+}
+
+#progress-percent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  padding-right: .3vw;
+  font-size: .55vw;
+  line-height: 4vh;
+  color: #fff;
+  transform: translate(-100%,0);
+}
+
+.progress {
+  background: rgba(255,255,255,0.1);
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: relative;
+  padding: 0 5px;
+  display: flex;
+  height: 40px;
+  width: 100%;
+}
+
+.progress-value {
+  animation: load 3s normal forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+  border-radius: 100px;
+  background: #fff;
+  height: 30px;
+  width: 0;
+}
+
 

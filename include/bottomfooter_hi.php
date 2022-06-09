@@ -1,4 +1,4 @@
-﻿<footer class="footer">
+﻿<footer class="bottomfooter">
     <div class="copy-right_text ">
         <div class="container">
             <div class="row text-center">

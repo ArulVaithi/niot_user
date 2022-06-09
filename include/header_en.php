@@ -217,9 +217,9 @@ include('db_connection.php');
                                 <li><a href="#">About Us <i class="ti-angle-down"></i></a>
                                     <ul class="submenu">
                                         <li><a href="about.php">About NIOT</a></li>
-                                        <li><a href="#">Administration</a></li>
+                                        <li><a href="niot_administration.php">Administration</a></li>
                                         <li><a href="niot_events.php">Events</a></li>
-                                        <li><a href="niot_employeescorner.php"> Employee Corner</a></li>
+                                        <li><a href="niot_employeescorner.php"> Employees Corner</a></li>
                                         <!-- <li><a href="#">IPR Details</a></li>
                                         <li><a href="#">Employee's Corner</a></li>
                                         <li><a href="#">Administration</a></li>
@@ -305,7 +305,7 @@ include('db_connection.php');
                                 <li><a href="#">RTI <i class="ti-angle-down"></i></a>
                                     <ul class="submenu">
                                         <li><a href="#">RTI Contacts</a></li>
-                                        <li><a href="#">RTI Documents</a></li>
+                                        <li><a href="niot_rti.php">RTI Documents</a></li>
                                         <li><a href="#">IPR Details</a></li>
                                     </ul>
                                 </li>

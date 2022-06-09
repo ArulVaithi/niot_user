@@ -308,7 +308,7 @@ include('db_connection.php');
                                 <li><a href="#">आरटीआई <i class="ti-angle-down"></i></a>
                                     <ul class="submenu">
                                         <li><a href="#">आरटीआई संपर्क</a></li>
-                                        <li><a href="#">आरटीआई दस्तावेज</a></li>
+                                        <li><a href="niot_rti.php">आरटीआई दस्तावेज</a></li>
                                         <li><a href="#">आईपीआर विवरण </a></li>
                                     </ul>
                                 </li>

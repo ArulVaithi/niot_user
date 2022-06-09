@@ -523,7 +523,7 @@
     $("#search_input").focus();
   });
 
-  var $affectedElements = $("p, h1, h2, h3, h4, h5, h6"); // Can be extended, ex. $("div, p, span.someClass")
+  var $affectedElements = $("body,p, h1, h2, h3, h4, h5, h6,ul,ol,a,input"); // Can be extended, ex. $("div, p, span.someClass")
 
   // Storing the original size in a data attribute so size can be reset
   $affectedElements.each(function () {
@@ -539,7 +539,7 @@
     changeFontSize(-1);
   });
 
-  $("#btn-orig1").click(function () {
+  $("#btn-orig").click(function () {
     $affectedElements.each(function () {
       var $this = $(this);
 
