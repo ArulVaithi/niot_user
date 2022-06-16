@@ -221,10 +221,10 @@ include('db_connection.php');
                                 <li><a href="#">हमारे बारे में <i class="ti-angle-down"></i></a>
                                     <ul class="submenu">
                                         <li><a href="about.php">रासप्रौसं के बारे में</a></li>
-                                        <li><a href="#">प्रशासन </a></li>
+                                        <li><a href="niot_administration.php">प्रशासन </a></li>
                                         <li><a href="niot_events.php">घटनाक्रम </a></li>
 
-                                        <li><a href="#"> कर्मचारी कॉर्नर</a></li>
+                                        <li><a href="niot_awards.php"> कर्मचारी कॉर्नर</a></li>
                                         <!-- <li><a href="#">IPR Details</a></li>
                                         <li><a href="#">Employee's Corner</a></li>
                                         <li><a href="#">Administration</a></li>

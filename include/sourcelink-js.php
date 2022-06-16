@@ -59,9 +59,11 @@ if (isset($_SESSION['lang'])) {
 <script src="js/datatable/jquery.dataTables.min.js"></script>
 <script src="js/datatable/dataTables.bootstrap4.min.js"></script>
 <script src="js/fontsize_control.js"></script>
+<script src="js/parsley_validate.js"></script>
+<script src="js/custom_validate.js"></script>
 <!-- Select 2 js -->
 <script src="css/select2/dist/js/select2.full.min.js"></script>
-
+<script src="js/lightgallery-all.min.js"></script>
 <!-- <script src="js/datatable/jquery.dataTables.min.js"></script>
     <script src="js/datatable/dataTables.bootstrap.min.js"></script> -->
 <!-- <script src="js/datatable/dataTables.responsive.min.js"></script>

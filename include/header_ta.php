@@ -216,9 +216,9 @@ include('db_connection.php');
                                 <li><a href="#">தே.பெ.தொ.க பற்றி <i class="ti-angle-down"></i></a>
                                     <ul class="submenu">
                                         <li><a href="about.php">தே.பெ.தொ.க பற்றி</a></li>
-                                        <li><a href="#">நிர்வாகம்</a></li>
+                                        <li><a href="niot_administration.php">நிர்வாகம்</a></li>
                                         <li><a href="niot_events.php">நிகழ்வுகள்</a></li>
-                                        <li><a href="#">பணியாளர் கார்னர்</a></li>
+                                        <li><a href="niot_employeescorner.php">பணியாளர் கார்னர்</a></li>
                                         <!-- <li><a href="#">IPR Details</a></li>
                                         <li><a href="#">Employee's Corner</a></li>
                                         <li><a href="#">Administration</a></li>
@@ -232,7 +232,7 @@ include('db_connection.php');
                                         <li><a href="niot_director.php">இயக்குநர், தேசியப் பெருங்கடல் தொழில்நுட்பக் கழகம்</a></li>
                                         <li><a href="#">அலுவலக ஊழியர்கள்</a></li>
                                         <li><a href="#">முன்னாள் இயக்குனர்கள், தேசியப் பெருங்கடல் தொழில்நுட்பக் கழகம் </a></li>
-                                        <li><a href="#">விருதுகள்</a></li>
+                                        <li><a href="niot_awards.php">விருதுகள்</a></li>
                                     </ul>
                                 </li>
 

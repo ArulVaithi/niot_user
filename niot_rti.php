@@ -18,12 +18,21 @@
 
     $get_rti = "select a1.mas_id,b1.title, a1.contents from niot_rti_$currentLang  as a1 	 
 inner join mst_rti_$currentLang as b1  on a1.mas_id = b1.doc_id
-where b1.status ='L' and a1.status = 'L'  and a1.contents <>''";
+where b1.status ='L' and a1.status = 'L'  and a1.contents <>'' ";
     $result_rti = pg_query($db, $get_rti);
-    // $rowvalue = pg_fetch_array(
-    //     $result_rti
-    // );
-    // $techcount_en = pg_num_rows($result_rti);
+
+    $rticount = pg_num_rows($result_rti);
+
+    $first_rti = "select a1.mas_id,b1.title, a1.contents from niot_rti_$currentLang  as a1 	 
+inner join mst_rti_$currentLang as b1  on a1.mas_id = b1.doc_id
+where b1.status ='L' and a1.status = 'L'  and a1.contents <>'' limit 1";
+    $result_firstrti = pg_query($db, $first_rti);
+
+    $row_rti = pg_fetch_array(
+        $result_firstrti
+    );
+    $first_id =  $row_rti['mas_id'];
+
     // echo $get_rti;
     // 
     // exit;
@@ -61,7 +70,7 @@ where b1.status ='L' and a1.status = 'L'  and a1.contents <>''";
             <div class="col-xl-12">
                 <div class="bradcam_text">
                     <h3></h3>
-                    <p><a href="index.php"><i class="fa fa-home "> </i> /</a> About Us / <a href="niot_rti.php"> rti </a> </p>
+                    <p><a href="index.php"><i class="fa fa-home "> </i> /</a> RTI / <a href="niot_rti.php"> RTI Documents </a> </p>
                 </div>
             </div>
         </div>
@@ -98,23 +107,14 @@ where b1.status ='L' and a1.status = 'L'  and a1.contents <>''";
                     where b1.status ='L' and a1.status = 'L'  and a1.contents <>''";
                     $result_content = pg_query($db, $get_content);
 
-                    while ($content = pg_fetch_array($result_content)) {   ?>
-                        <section class="admin_section  administration_bg " id="<?php echo $content['mas_id'] ?>">
-                            <div class="row ">
-                                <div class="col-lg-12 ">
-                                    <h2 class="text-center"><?php echo $content['title']; ?></h2>
-                                    <div class="admin_header"></div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="resume-item col-md col-sm-12 col-lg-12">
-                                    <?Php echo $content['contents'] ?>
-                                </div>
-                            </div>
-                        </section>
-                        <!-- <hr> -->
-                        <br>
-                    <?php } ?>
+                    ?>
+                    <div id="getrecords">
+
+                    </div>
+
+                    <!-- <hr> -->
+                    <br>
+
 
                 </div>
             </div>
@@ -134,8 +134,8 @@ where b1.status ='L' and a1.status = 'L'  and a1.contents <>''";
                                     <!-- <div class="admin_header"></div> -->
                                 </div>
                                 <ul class="adminquick-1st nobulletstyle" style="padding:10px;">
-                                    <?php while ($row = pg_fetch_array($result_rti)) { ?>
-                                        <li><a class="nav-link js-scroll-trigger" href="#<?php echo $row['mas_id'] ?>"><?php echo $row['title'] ?></a></li>
+                                    <?php while ($row = pg_fetch_array($result_rti)) {   ?>
+                                        <li><a class="nav-link js-scroll-trigger " href="#" onclick="get_records('<?php echo $row['mas_id'] ?>');"><?php echo $row['title'] ?></a></li>
                                     <?php } ?>
                                     <!-- <li><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
                                     <li><a class="nav-link js-scroll-trigger" href="#academic">Academic Background Academic Background Academic BackgroundAcademic BackgroundAcademic Background</a></li>
@@ -159,17 +159,54 @@ where b1.status ='L' and a1.status = 'L'  and a1.contents <>''";
     <?php include("include/sourcelink-js.php"); ?>
     <script src="js/csvjson.json"></script>
     <script>
+        // var count = <?php echo $rticount ?>;
+        var first_masid = '<?php echo $first_id ?>';
+
         $(document).ready(function() {
 
+            get_records(first_masid);
         });
 
+        function get_records(mas_id) {
+
+            var data = {
+                mas_id: mas_id
+            }
+            $.ajax({
+                type: 'POST',
+                // contentType: "application/json",
+                // dataType: "json",
+                url: 'webservice/get_rti.php',
+                data: data,
+                success: function(response, textStatus, xhr) {
+
+                    console.log(response);
+
+                    $("#getrecords").html(response);
+                    //      $('adminquick-1st li a').removeClass('active');
+                    // $('adminquick-1st li a .nav-click').addClass('active');
+                    table = $('.tbl-en-draft').DataTable();
+
+                    $(".select2").select2();
+                    statusAppend();
+                },
+                complete: function(xhr) {
+
+                },
+                error: function(XMLHttpRequest, textStatus, errorThrown) {
+                    var response = XMLHttpRequest;
+                    swal("Error :Archive!", "Please try again", "error");
+
+                }
+            });
+        }
         $('#tbl-en-draft').DataTable();
         // $('#tbl-en-draft').DataTable({
 
         // });
     </script>
     <script>
-        var json;
+        var json, count;
         $(document).ready(function() {
 
             // var data = eval("(" + json.responseText + ")");

@@ -19,6 +19,11 @@
 
   $(document).ready(function () {
     $(".select2").select2();
+    
+    // var date = new Date();
+    // var today = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+
+    // currDate = $('.date').datepicker('setDate', today);
     // mobile_menu
     //load_menu();
     var menu = $("ul#navigation");

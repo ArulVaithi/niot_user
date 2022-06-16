@@ -105,7 +105,7 @@ where b1.status ='L' and a1.status = 'L'  and a1.contents <>''";
                         <section class="admin_section  administration_bg " id="<?php echo $content['mas_id'] ?>">
                             <div class="row ">
                                 <div class="col-lg-12 ">
-                                    <h2 class="text-center"><?php echo $content['title']; ?></h2>
+                                    <h2 ><?php echo $content['title']; ?></h2>
                                     <div class="admin_header"></div>
                                 </div>
                             </div>

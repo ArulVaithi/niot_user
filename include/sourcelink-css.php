@@ -19,6 +19,9 @@
   <!-- <link rel="stylesheet" href="css/aos.css"> -->
   <link rel="stylesheet" href="css/datatable/dataTables.bootstrap4.min.css">
   <link rel="stylesheet" href="css/datatable/responsive.bootstrap4.min.css">
+  <link rel="stylesheet" href="css/lightgallery.css">
+  <!-- <link rel="stylesheet" href="css/lightgallery.min.css"> -->
+ 
   <link rel="stylesheet" href="css/style.css">
   <!-- <link rel="stylesheet" href="css/darktheme.css"> -->
   <!-- Select 2 css -->

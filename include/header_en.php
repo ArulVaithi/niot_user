@@ -233,7 +233,7 @@ include('db_connection.php');
                                         <li><a href="niot_director.php">Director, NIOT</a></li>
                                         <li><a href="niot_staffs.php">NIOT Staffs</a></li>
                                         <li><a href="former_directors.php">Former Directors of NIOT</a></li>
-                                        <li><a href="#">Awards</a></li>
+                                        <li><a href="niot_awards.php">Awards</a></li>
                                     </ul>
                                 </li>
 
@@ -292,8 +292,8 @@ include('db_connection.php');
                                 <li><a href="#">Galleries <i class="ti-angle-down"></i></a>
                                     <ul class="submenu">
                                         <li><a href="events_gallery.php">Event Gallery</a></li>
-                                        <li><a href="#">Award Gallery</a></li>
-                                        <li><a href="#">Photo Gallery</a></li>
+                                        <li><a href="niot_awards.php">Award Gallery</a></li>
+                                        <li><a href="niot_photogallery.php">Photo Gallery</a></li>
                                         <li><a href="#">Video Gallery</a></li>
                                     </ul>
                                 </li>
