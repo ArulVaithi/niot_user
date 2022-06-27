@@ -33,7 +33,7 @@ $resultDraftEn = pg_query($db, $draftEn);
             )
 
         ) {
-            $path = "../niotadmin/uploads/" . $row['filename'] . "";
+            $path = "uploads/" . $row['filename'] . "";
             $fileSize = filesize($path);
             $fileSize = round($fileSize / 1024);
             //   var_dump($fileSize);
@@ -62,7 +62,7 @@ $resultDraftEn = pg_query($db, $draftEn);
                 <td style="width:20%;"><?php
                                         if ($row['filename'] != '') {
                                         ?>
-                        <a href='../niotadmin/uploads/<?php echo $row['filename'] ?>' target="_blank" style="color:blue;" title="View Here"> view (<?php echo  $row['filesize'];  ?> ) &nbsp; <i class="fa fa-file-pdf-o fa-lg" style="color:#F44336;"></i></a> &nbsp;&nbsp;<a href=""> <i class="fa fa-download fa-lg " style="color:#673AB7;" title="Download Here" aria-hidden="true"></i></a>
+                        <a href='uploads/<?php echo $row['filename'] ?>' target="_blank" style="color:blue;" title="View Here"> view (<?php echo  $row['filesize'];  ?> ) &nbsp; <i class="fa fa-file-pdf-o fa-lg" style="color:#F44336;"></i></a> &nbsp;&nbsp;<a href=""> <i class="fa fa-download fa-lg " style="color:#673AB7;" title="Download Here" aria-hidden="true"></i></a>
                     <?php
                                         } else {
                     ?>

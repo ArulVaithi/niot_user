@@ -1,7 +1,5 @@
 <?php include("include/db_connection.php");
 
-
-
 ?>
 <!doctype html>
 <html class="no-js" lang="zxx">
@@ -18,18 +16,9 @@
 
 <body id="page-top" style="background:#eeeeee;">
     <?php
+    $get_category = "select * FROM mst_photogallery_$currentLang WHERE  status='A'";
+    $result_category = pg_query($db, $get_category);
 
-    $get_administration = "select a1.mas_id,b1.title, a1.contents from niot_administration_$currentLang  as a1 	 
-inner join mst_administration_$currentLang as b1  on a1.mas_id = b1.admin_id
-where b1.status ='L' and a1.status = 'L'  and a1.contents <>''";
-    $result_administration = pg_query($db, $get_administration);
-    // $rowvalue = pg_fetch_array(
-    //     $result_administration
-    // );
-    // $techcount_en = pg_num_rows($result_administration);
-    // echo $get_administration;
-    // 
-    // exit;
     ?>
     <!-- bradcam_area_start  -->
     <!-- <div class="bradcam_area breadcam_bg bradcam_overlay">
@@ -83,111 +72,131 @@ where b1.status ='L' and a1.status = 'L'  and a1.contents <>''";
     </div> -->
     <!-- <div class="pages" style="margin:auto;"> -->
     <!-- <div class="container"> -->
-    <div class="col-lg-12" style="padding-left:150px;padding-right:150px;">
+    <div class="col-lg-12 col-md-12 col-sm-12 main-section">
         <div class="section-title wow zoomIn" data-aos="fade-up">
             <h2 class="text-center contenttitle">Photo Gallery</h2>
             <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
         </div>
-        <section class="blog_area awardsection-padding">
+        <section class=" awardsection-padding">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4">
-                        <div class="image-wrap-2">
-                            <div class="image-info">
-                                <!-- <h2 class="mb-3">Nature</h2> -->
-                                <a href="niot_photogallerydetails.php" class="btn btn-outline-white py-2 px-4">More Photos</a>
-                            </div>
-                            <img src="img/awards/award1.png" alt="Image" class="img-fluid">
-                            <div class="bottomright">
-                                <h2 class="mb-3 text-center" style="color:#111">General Photo</h2>
-                            </div>
-                        </div>
+                    <?php
+                    while (
+                        $row = pg_fetch_array(
+                            $result_category
+                        )
+                    ) {
+                        $mas_id = $row['doc_id'];
 
-                    </div>
-                    <div class="col-lg-4">
+                        $get_image = "select file_name from niot_photogallery_$currentLang where status='A' and mas_id =$mas_id  order by doc_id desc";
+                        $result_image = pg_query($db, $get_image);
+                        $img_row = pg_fetch_array($result_image);
+                        $img_name = $img_row['file_name'];
+                        $documents_count = pg_num_rows($result_image);
+                        //echo $documents_count;
+                        if ($documents_count == 0) {
+                            $file = 'img/no_image.png';
+                        } else {
+                            $file = "uploads/media/$img_name";
+                        }
+                    ?>
+                        <div class="col-lg-4 ">
+                            <div class="image-wrap-2">
+                                <a href="niot_photogallerydetails.php" onclick="redirect_url('<?php echo $row['doc_id']; ?>')">
+                                    <div class="image-info">
+                                        <!-- <h2 class="mb-3">Nature</h2> -->
+                                        <a href="niot_photogallerydetails.php" class="btn btn-info btn-outline-white py-2 px-4 " onclick="redirect_url('<?php echo $row['doc_id']; ?>')">More Photos</a>
+                                    </div>
+                                    <img src="<?Php echo $file ?>" alt="Image" class="img-fluid">
+                                </a>
+                                <div class="bottomright">
+                                    <h3 class="mb-3 text-center" style="color:#111"><?Php echo $row['title'] ?></h3>
+                                </div>
+                            </div>
+
+                        </div>
+                    <?Php } ?>
+                    <!-- <div class="col-lg-4  ">
                         <div class="image-wrap-2">
                             <div class="image-info">
-                                <h2 class="mb-3">Portrait</h2>
                                 <a href="niot_photogallerydetails.php" class="btn btn-outline-white py-2 px-4">More Photos</a>
                             </div>
                             <img src="img/awards/award2.png" alt="Image" class="img-fluid">
                             <div class="bottomright">
-                                <h2 class="mb-3 text-center" style="color:#111">Technology</h2>
+                                <h3 class="mb-3 text-center">Technology</h3>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 ">
                         <div class="image-wrap-2">
                             <div class="image-info">
-                                <h2 class="mb-3">People</h2>
                                 <a href="niot_photogallerydetails.php" class="btn btn-outline-white py-2 px-4">More Photos</a>
                             </div>
                             <img src="img/awards/award1.png" alt="Image" class="img-fluid">
                             <div class="bottomright">
-                                <h2 class="mb-3 text-center" style="color:#111">Bottom Right</h2>
+                                <h3 class="mb-3 text-center">Events</h3>
                             </div>
                         </div>
-                    </div>
+                    </div> 
 
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 ">
                         <div class="image-wrap-2">
                             <div class="image-info">
-                                <h2 class="mb-3">Architecture</h2>
+
                                 <a href="niot_photogallerydetails.php" class="btn btn-outline-white py-2 px-4">More Photos</a>
                             </div>
                             <img src="img/awards/award1.png" alt="Image" class="img-fluid">
                         </div>
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 ">
                         <div class="image-wrap-2">
                             <div class="image-info">
-                                <h2 class="mb-3">Animals</h2>
                                 <a href="niot_photogallerydetails.php" class="btn btn-outline-white py-2 px-4">More Photos</a>
                             </div>
                             <img src="img/awards/award1.png" alt="Image" class="img-fluid">
                         </div>
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 ">
                         <div class="image-wrap-2">
                             <div class="image-info">
-                                <h2 class="mb-3">Sports</h2>
+
                                 <a href="niot_photogallerydetails.php" class="btn btn-outline-white py-2 px-4">More Photos</a>
                             </div>
                             <img src="img/awards/award1.png" alt="Image" class="img-fluid">
                         </div>
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 ">
                         <div class="image-wrap-2">
                             <div class="image-info">
-                                <h2 class="mb-3">Travel</h2>
+
                                 <a href="niot_photogallerydetails.php" class="btn btn-outline-white py-2 px-4">More Photos</a>
                             </div>
                             <img src="img/awards/award1.png" alt="Image" class="img-fluid">
                         </div>
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 ">
                         <div class="image-wrap-2">
                             <div class="image-info">
-                                <h2 class="mb-3">People</h2>
+
                                 <a href="niot_photogallerydetails.php" class="btn btn-outline-white py-2 px-4">More Photos</a>
                             </div>
                             <img src="img/awards/award1.png" alt="Image" class="img-fluid">
                         </div>
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 ">
                         <div class="image-wrap-2">
                             <div class="image-info">
-                                <h2 class="mb-3">Architecture</h2>
+
                                 <a href="niot_photogallerydetails.php" class="btn btn-outline-white py-2 px-4">More Photos</a>
                             </div>
                             <img src="img/awards/award1.png" alt="Image" class="img-fluid">
                         </div>
-                    </div>
+                    </div>-->
 
                 </div>
         </section>
@@ -196,65 +205,33 @@ where b1.status ='L' and a1.status = 'L'  and a1.contents <>''";
     <?php include('include/bottomfooter.php'); ?>
 
     <?php include("include/sourcelink-js.php"); ?>
-    <script src="js/csvjson.json"></script>
+    <!-- <script src="js/csvjson.json"></script> -->
     <script>
         $(document).ready(function() {
 
         });
 
-        $('#tbl-en-draft').DataTable();
-        // $('#tbl-en-draft').DataTable({
-
-        // });
-    </script>
-    <script>
-        var json;
-        $(document).ready(function() {
-
-            // var data = eval("(" + json.responseText + ")");
-            // document.write(data["a"]);
-            // console.log(data);
-            $(".filter-b").click(function() {
-                var value = $(this).attr('data-filter');
-                if (value == "all") {
-                    $('.filter').show('1000');
-                } else {
-                    $(".filter").not('.' + value).hide('3000');
-                    $('.filter').filter('.' + value).show('3000');
-                }
-            });
-
-            if ($(".filter-b").removeClass("active")) {
-                $(this).removeClass("active");
+        function redirect_url(id) {
+            var current_lang = $('#current_lang').text();
+            var data = {
+                id: id,
+                lang: current_lang
             }
-            $(this).addClass("active");
-
-            $.getJSON("js/csvjson.json", function(json) {
-                console.log(json);
+            console.log(data);
+            // return false;
+            $.ajax({
+                url: "webservice/gallery_session.php",
+                type: 'POST',
+                dataType: 'json',
+                data: data
+            }).done(function(res) {
+                //  console.log(res);
+                //  return false;
+                // if (res.valid) {
+                //     document.location.href = 'niot_photogallerydetails.php';
+                // }
             });
-        });
-
-        // SKILLS
-        $(function() {
-            $('.counter').counterUp({
-                delay: 10,
-                time: 2000
-            });
-
-        });
-        let processScroll = () => {
-            let docElem = document.documentElement,
-                docBody = document.body,
-                scrollTop = docElem['scrollTop'] || docBody['scrollTop'],
-                scrollBottom = (docElem['scrollHeight'] || docBody['scrollHeight']) - window.innerHeight,
-                scrollPercent = scrollTop / scrollBottom * 100 + '%';
-            progressPercent = $('#progress-percent');
-            // console.log(scrollTop + ' / ' + scrollBottom + ' / ' + scrollPercent);
-
-            document.getElementById("progress-bar").style.setProperty("--scrollAmount", scrollPercent);
         }
-
-        document.addEventListener('scroll', processScroll);
     </script>
 </body>
 

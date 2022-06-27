@@ -61,42 +61,52 @@ $draftEn = "SELECT * FROM mst_employeescorner_en WHERE  status='L' ORDER BY uplo
                 <!-- <div class="col-md-5 wow fadeInLeft" data-aos="fade-right">
                     <img src="img/work-process-1.png" class="img-fluid" alt="">
                 </div> -->
-                <div class="col-md-12 pt-4 wow fadeInRight" data-aos="fade-left">
-                    <!-- <h3>Vision</h3> -->
+                <div class="col-md-12 pt-4 " data-aos="fade-left">
+                    <!-- <div class="row">
+                       
+                        <div class="col-lg-4 text-center" style="border:1px solid #fff;background:#fff;padding:30px;">
+                            <a href="">Form 16</a>
+                        </div>
+                        <div class="col-lg-4 text-center" style="border:1px solid #111;background:#fff">
+                            <a href="">Form 16</a>
+                        </div>
+                        <div class="col-lg-4 text-center" style="border:1px solid #111;background:#fff">
+                            <a href="">Form 16</a>
+                        </div>
+                    </div> -->
+                    <ul class="bulletstyle employescorner" ><?php
+                                                                    $resultDraftEn = pg_query($db, $draftEn);
 
-                    <ul><?php
-                        $resultDraftEn = pg_query($db, $draftEn);
+                                                                    while (
+                                                                        $row = pg_fetch_array(
+                                                                            $resultDraftEn
 
-                        while (
-                            $row = pg_fetch_array(
-                                $resultDraftEn
+                                                                        )
 
-                            )
-
-                        ) {
-                            if ($row['filename'] != '') {
-                                $path = "../niotadmin/uploads/employeescorner/" . $row['filename'] . "";
-                            }
-                            if ($row['ad_link'] != '') {
-                                $path = $row['ad_link'];
-                            }
-                        ?>
+                                                                    ) {
+                                                                        if ($row['filename'] != '') {
+                                                                            $path = "../niotadmin/uploads/employeescorner/" . $row['filename'] . "";
+                                                                        }
+                                                                        if ($row['ad_link'] != '') {
+                                                                            $path = $row['ad_link'];
+                                                                        }
+                                                                    ?>
                             <li>
-                                <a href='<?php echo $path ?>' target="_blank"  style="color: blue;" title="View Here"><?php echo $row['title']; ?> </a>
+                                <a href='<?php echo $path ?>' target="_blank" class="employelink" title="View Here"><?php echo $row['title']; ?> </a>
 
                             </li>
                         <?php } ?>
                     </ul>
 
-                   <!-- <?php  $fileSize = filesize($path);
-                    $fileSize = round($fileSize / 1024);  ?><?php
-                                                                if ($row['filename'] == '') {
-                                                                    echo $row['title'];
-                                                                ?><li>
+                    <!-- <?php $fileSize = filesize($path);
+                            $fileSize = round($fileSize / 1024);  ?><?php
+                                                            if ($row['filename'] == '') {
+                                                                echo $row['title'];
+                                                            ?><li>
                         <a href='<?php echo $row['link']; ?>' target="_blank" style="color:blue;" title="View Here"><?php echo $row['title']; ?> </a>
 
                     </li><?php }
-                                                                if ($row['link'] == '') echo $row['title'];
+                                                            if ($row['link'] == '') echo $row['title'];
                             ?><li>
                     <a href='../niotadmin/uploads/employesscorner/<?php echo $row['filename'] ?>' target="_blank" style="color:blue;" title="View Here"> <?php echo $row['title']; ?></a>
                 </li> -->

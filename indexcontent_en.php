@@ -172,6 +172,7 @@
            <div class="row ">
                <div class="col-lg-12">
                    <div class="card-grid">
+                  
                        <a class="leadercard wow fadeInUp" data-wow-delay="0.1s" href="niot_minister.php">
                            <div class="card__background" style="background-image:url(img/leaders/minister_new.jpg)">
                                <!-- <img src="img/leaders/leader1.jpg" alt=""> -->
@@ -185,6 +186,7 @@
                                <!-- </div> -->
                            </div>
                        </a>
+                   
                        <a class="leadercard wow fadeInUp" data-wow-delay="0.2s" href="niot_secretary.php">
                            <div class="card__background" style="background-image: url(img/leaders/leader2.jpg)"></div>
                            <div class="card__content text-center">

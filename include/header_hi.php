@@ -58,7 +58,7 @@ include('db_connection.php');
                             <li> <a href="javascript:void(0);" class="light" style="color:#000;background-color:#fff;display: block;  padding: 2px;" onclick="myFunction('light');">A<sup>&nbsp;</sup></a></li>
                             <li><span class="toolbarline"></span></li>
                             <li style="margin-right:20px;">
-                                <form method='get' action='' id='form_lang'><select class="select2" name='lang' onchange="changeLang();" style="width: 100%">
+                                <form method='get' action='' id='form_lang'><select class="langselect" name='lang' onchange="changeLang();" style="width: 100%">
                                         <!-- <option value="">Language</option> -->
                                         <option value='en' <?php if (isset($_SESSION['lang']) && $_SESSION['lang'] == 'en') {
                                                                 echo "selected";
@@ -298,12 +298,6 @@ include('db_connection.php');
                                         <li><a href="#">वीडियो गैलरी</a></li>
                                     </ul>
                                 </li>
-                                <!-- Contact Us -->
-                                <li><a href="#">संपर्क करें <i class="ti-angle-down"></i></a>
-                                    <ul class="submenu">
-                                        <li><a href="contactus.php">एनआईओटी, चेन्नई</a></li>
-                                    </ul>
-                                </li>
                                 <!-- RTI -->
                                 <li><a href="#">आरटीआई <i class="ti-angle-down"></i></a>
                                     <ul class="submenu">
@@ -312,6 +306,13 @@ include('db_connection.php');
                                         <li><a href="#">आईपीआर विवरण </a></li>
                                     </ul>
                                 </li>
+                                <!-- Contact Us -->
+                                <li><a href="#">संपर्क करें <i class="ti-angle-down"></i></a>
+                                    <ul class="submenu">
+                                        <li><a href="contactus.php">एनआईओटी, चेन्नई</a></li>
+                                    </ul>
+                                </li>
+                                
                                 <button class="navbar-toggler" onclick="openNav()" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars" style='color:#fff;'></i></button>
                                 <!-- <li><a href="recruitment_details.php">Recruitment</a></li>
                                 <li><a href="#">Contact Us</a></li> -->

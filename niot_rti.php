@@ -89,7 +89,7 @@ where b1.status ='L' and a1.status = 'L'  and a1.contents <>'' limit 1";
     </div> -->
     <!-- <div class="pages" style="margin:auto;"> -->
     <!-- <div class="container"> -->
-    <div class="col-lg-12" style="padding-left:150px;padding-right:150px;">
+    <div class="col-lg-12 main-section">
         <div class="section-title wow zoomIn" data-aos="fade-up">
             <h2 class="text-center contenttitle">Right To Information</h2>
             <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
@@ -157,7 +157,7 @@ where b1.status ='L' and a1.status = 'L'  and a1.contents <>'' limit 1";
     <?php include('include/bottomfooter.php'); ?>
 
     <?php include("include/sourcelink-js.php"); ?>
-    <script src="js/csvjson.json"></script>
+   
     <script>
         // var count = <?php echo $rticount ?>;
         var first_masid = '<?php echo $first_id ?>';
@@ -187,8 +187,8 @@ where b1.status ='L' and a1.status = 'L'  and a1.contents <>'' limit 1";
                     // $('adminquick-1st li a .nav-click').addClass('active');
                     table = $('.tbl-en-draft').DataTable();
 
-                    $(".select2").select2();
-                    statusAppend();
+                    // $(".langselec").select2();
+                   
                 },
                 complete: function(xhr) {
 

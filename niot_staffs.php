@@ -101,7 +101,294 @@
 
         </div>
     </div> -->
-    <div id="img_grid" class="img-grid">
+    <!-- <div id="img_grid" class="img-grid">
+        <div class="container-block"> -->
+    <!-- <div id="get_records">
+
+    </div> -->
+
+    <section class="portfolio" style="background:#fff;">
+        <div class="container" data-aos="fade-up">
+            <div class="row">
+                <a class="btn btn-info" href="niot_staffanother.php">Another Design</a>
+            </div>
+            <div class="section_title text-center">
+                <h3 style="color:#111">NIOT Staffs</h3>
+                <!-- <p>Group of NIOT Photos & Videos related to Events , Technologies, Awards etc.</p> -->
+            </div>
+
+            <div class="row" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-12 d-flex justify-content-center filter-button-group">
+                    <ul id="portfolio-flters">
+                        <li data-filter="*" style="color:#111;border:2px solid #111;" class="filter-active">All</li>
+                        <li data-filter=".filter-image" style="color:#111;border:2px solid #111;">Director</li>
+                        <li data-filter=".filter-video" style="color:#111;border:2px solid #111;">SCIENTIST-G</li>
+                        <li data-filter=".filter-image" style="color:#111;border:2px solid #111;">SCIENTIST-F</li>
+                        <li data-filter=".filter-video" style="color:#111;border:2px solid #111;"> SCIENTIST-E </li>
+                        <li data-filter=".filter-image" style="color:#111;border:2px solid #111;"> SCIENTIST-D </li>
+                        <li data-filter=".filter-video" style="color:#111;border:2px solid #111;"> SCIENTIST-C </li>
+                        <li data-filter=".filter-image" style="color:#111;border:2px solid #111;"> SCIENTIST-B </li>
+                        <li data-filter=".filter-video" style="color:#111;border:2px solid #111;"> Others </li>
+                        <!-- <li data-filter=".filter-web">Web</li> -->
+                    </ul>
+                </div>
+            </div>
+
+            <div id="get_records">
+
+            </div>
+<!-- 
+            <div class="row portfolio-container wow zoomInRight" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-lg-4 col-md-6 portfolio-item filter-image">
+                    <div class="portfolio-wrap">
+                        <img src="img/portfolio/award1.png" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>App 1</h4>
+                            <p>App</p>
+                            <div class="portfolio-links">
+                                <a href="img/portfolio/award1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="fa fa-eye"></i></a>
+                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-image">
+                    <div class="portfolio-wrap">
+                        <img src="img/portfolio/award2.png" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>App 1</h4>
+                            <p>App</p>
+                            <div class="portfolio-links">
+                                <a href="img/portfolio/award2.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="fa fa-eye"></i></a>
+                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-video">
+                    <div class="portfolio-wrap">
+                        <img src="img/portfolio/award1.png" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Web 3</h4>
+                            <p>Web</p>
+                            <div class="portfolio-links">
+                                <a href="img/portfolio/award1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="fa fa-eye"></i></a>
+                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-image">
+                    <div class="portfolio-wrap">
+                        <img src="img/portfolio/award1.png" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>App 2</h4>
+                            <p>App</p>
+                            <div class="portfolio-links">
+                                <a href="img/portfolio/award1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="fa fa-eye"></i></a>
+                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-video">
+                    <div class="portfolio-wrap">
+                        <a class="gallery-lightbox" href="img/portfolio/slide_video7.mp4"><video width="400" height="250">
+                                <source src="img/portfolio/slide_video7.mp4" class="img-fluid" type="video/mp4">
+                            </video></a>
+                        <div class="portfolio-info">
+                            <h4>Card</h4>
+                            <p>Card</p>
+                            <div class="portfolio-links">
+                                <a href="img/portfolio/slide_video7.mp4" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card ">
+                                  
+                                    <i class="fa fa-eye"></i>
+                                </a>
+                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                    <div class="portfolio-wrap">
+                        <img src="img/portfolio/award1.png" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Web 2</h4>
+                            <p>Web</p>
+                            <div class="portfolio-links">
+                                <a href="img/portfolio/award1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="fa fa-eye"></i></a>
+                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-image">
+                            <div class="portfolio-wrap">
+                                <img src="img/portfolio/award2.png" class="img-fluid" alt="">
+                                <div class="portfolio-info">
+                                    <h4>App 3</h4>
+                                    <p>App</p>
+                                    <div class="portfolio-links">
+                                        <a href="img/portfolio/award2.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="fa fa-eye"></i></a>
+                                        <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-image">
+                            <div class="portfolio-wrap">
+                                <img src="img/portfolio/award2.png" class="img-fluid" alt="">
+                                <div class="portfolio-info">
+                                    <h4>App 3</h4>
+                                    <p>App</p>
+                                    <div class="portfolio-links">
+                                        <a href="img/portfolio/award2.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="fa fa-eye"></i></a>
+                                        <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-image">
+                            <div class="portfolio-wrap">
+                                <img src="img/portfolio/award2.png" class="img-fluid" alt="">
+                                <div class="portfolio-info">
+                                    <h4>App 3</h4>
+                                    <p>App</p>
+                                    <div class="portfolio-links">
+                                        <a href="img/portfolio/award2.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="fa fa-eye"></i></a>
+                                        <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+
+                <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-video">
+                    <div class="portfolio-wrap">
+                        <img src="img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Card 1</h4>
+                            <p>Card</p>
+                            <div class="portfolio-links">
+                                <a href="img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="fa fa-eye"></i></a>
+                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-video">
+                    <div class="portfolio-wrap">
+                        <img src="img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Card 3</h4>
+                            <p>Card</p>
+                            <div class="portfolio-links">
+                                <a href="img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="fa fa-eye"></i></a>
+                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                    <div class="portfolio-wrap">
+                        <img src="img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Web 3</h4>
+                            <p>Web</p>
+                            <div class="portfolio-links">
+                                <a href="img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="fa fa-eye"></i></a>
+                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div> -->
+        </div>
+
+    </section>
+
+    <!-- <div class="row text-center" >
+            <h1 class="">NIOT Staffs</h1>
+        </div> -->
+
+
+
+    <!-- </div>
+        </div> -->
+
+    <!--  <li class="thumb-wrap"><a href="">
+                                    <img class="thumb" src="https://images.unsplash.com/photo-1559083991-9bdef0bb5a39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1955&q=80" alt="">
+                                    <div class="thumb-info">
+                                        <p class="thumb-title">Ravindran</p>
+                                        <p class="thumb-user">Username</p>
+                                        <p class="thumb-text">4.6K Views</p>
+                                    </div>
+                                </a></li>
+                            <li class="thumb-wrap"><a href="">
+                                    <img class="thumb" src="https://images.unsplash.com/photo-1560800589-3d88290dd749?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1955&q=80" alt="">
+                                    <div class="thumb-info">
+                                        <p class="thumb-title">Video Title 4</p>
+                                        <p class="thumb-user">Username</p>
+                                        <p class="thumb-text">3K Views</p>
+                                    </div>
+                                </a></li>
+                            <li class="thumb-wrap"><a href="">
+                                    <img class="thumb" src="https://images.unsplash.com/photo-1560716092-203a1703e06e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1955&q=80" alt="">
+                                    <div class="thumb-info">
+                                        <p class="thumb-title">Ravindran</p>
+                                        <p class="thumb-user">Username</p>
+                                        <p class="thumb-text">126K Views</p>
+                                    </div>
+                                </a></li>
+                            <li class="thumb-wrap"><a href="">
+                                    <img class="thumb" src="https://images.unsplash.com/photo-1565210227317-2a6e64e9b778?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="">
+                                    <div class="thumb-info">
+                                        <p class="thumb-title">Video Title 6</p>
+                                        <p class="thumb-user">Username</p>
+                                        <p class="thumb-text">255 Views</p>
+                                    </div>
+                                </a></li>
+                            <li class="thumb-wrap"><a href="">
+                                    <img class="thumb" src="https://images.unsplash.com/photo-1508180752316-db2148802010?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="">
+                                    <div class="thumb-info">
+                                        <p class="thumb-title">Ravindran</p>
+                                        <p class="thumb-user">Username</p>
+                                        <p class="thumb-text">100K Views</p>
+                                    </div>
+                                </a></li>
+                            <li class="thumb-wrap"><a href="">
+                                    <img class="thumb" src="https://images.unsplash.com/photo-1465287651408-7c76e5e8b191?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="">
+                                    <div class="thumb-info">
+                                        <p class="thumb-title">Video Title 8 - Semi Long Title</p>
+                                        <p class="thumb-user">Username</p>
+                                        <p class="thumb-text">1.8M Views</p>
+                                    </div>
+                                </a></li>
+                            <li class="thumb-wrap"><a href="">
+                                    <img class="thumb" src="https://images.unsplash.com/photo-1461995748424-ea60adff3fcd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="">
+                                    <div class="thumb-info">
+                                        <p class="thumb-title">Ravindran</p>
+                                        <p class="thumb-user">Username</p>
+                                        <p class="thumb-text">78 Views</p>
+                                    </div>
+                                </a></li>
+                            <li class="thumb-wrap"><a href=""> 
+                                    <img class="thumb" src="https://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="">
+                                    <div class="thumb-info">
+                                        <p class="thumb-title">Ravindran</p>
+                                        <p class="thumb-user">Username</p>
+                                        <p class="thumb-text">22K Views</p>
+                                    </div>
+                                </a></li>-->
+    </ul>
+    </div>
+    </div>
+    <!-- <div id="img_grid" class="img-grid">
         <div class="container-block">
             <a href="niot_staffprofile1.php">
             <img src="img/leaders/leader3.jpg" style="width:300px;height:310px">
@@ -154,7 +441,7 @@
             </div>
         </a>
         </div>
-<!--        
+              
         <a href="#" class="staffcard">
             <div class="inner-block">
                 <div class="slider-top-right"></div>
@@ -269,213 +556,260 @@
                 </a>
             </div>
         </div> -->
-    </div>
+
     <?php include('include/bottomfooter.php'); ?>
 
     <?php include("include/sourcelink-js.php"); ?>
-    <script src="js/csvjson.json"></script>
+    <!-- <script src="js/csvjson.json"></script> -->
     <script>
         $(document).ready(function() {
-
+            get_records();
         });
 
-        $('#tbl-en-draft').DataTable();
+        function get_records() {
+
+            $.ajax({
+                type: 'POST',
+                // contentType: "application/json",
+                // dataType: "html",
+                url: 'webservice/get_staffs1.php',
+                // data: data,
+                success: function(response, textStatus, xhr) {
+
+                    // console.log(response);
+
+                    $("#get_records").html(response);
+                    //      $('adminquick-1st li a').removeClass('active');
+                    // $('adminquick-1st li a .nav-click').addClass('active');
+                    //    table = $('.tbl-en-draft').DataTable();
+
+                    // $(".langselec").select2();
+
+                },
+                complete: function(xhr) {
+
+                },
+                error: function(XMLHttpRequest, textStatus, errorThrown) {
+                    var response = XMLHttpRequest;
+                    swal("Error :Archive!", "Please try again", "error");
+
+                }
+            });
+        }
         // $('#tbl-en-draft').DataTable({
 
         // });
     </script>
     <script>
-        var json;
-        $(document).ready(function() {
+        // var json;
+        // $(document).ready(function() {
 
-            // var data = eval("(" + json.responseText + ")");
-            // document.write(data["a"]);
-            // console.log(data);
-            $(".filter-b").click(function() {
-                var value = $(this).attr('data-filter');
-                if (value == "all") {
-                    $('.filter').show('1000');
-                } else {
-                    $(".filter").not('.' + value).hide('3000');
-                    $('.filter').filter('.' + value).show('3000');
-                }
-            });
+        //     // var data = eval("(" + json.responseText + ")");
+        //     // document.write(data["a"]);
+        //     // console.log(data);
+        //     $(".filter-b").click(function() {
+        //         var value = $(this).attr('data-filter');
+        //         if (value == "all") {
+        //             $('.filter').show('1000');
+        //         } else {
+        //             $(".filter").not('.' + value).hide('3000');
+        //             $('.filter').filter('.' + value).show('3000');
+        //         }
+        //     });
 
-            if ($(".filter-b").removeClass("active")) {
-                $(this).removeClass("active");
-            }
+        //     if ($(".filter-b").removeClass("active")) {
+        //         $(this).removeClass("active");
+        //     }
+        //     $(this).addClass("active");
+
+        //     $.getJSON("js/csvjson.json", function(json) {
+        //         console.log(json);
+        //     });
+        // });
+
+        // // SKILLS
+        // $(function() {
+        //     $('.counter').counterUp({
+        //         delay: 10,
+        //         time: 2000
+        //     });
+
+        // });
+
+        // window.addEventListener("DOMContentLoaded", () => {
+        //     const ig = new ImageGrid("#img_grid");
+        // });
+
+        // class ImageGrid {
+        //     constructor(selector) {
+        //         this.el = document.querySelector(selector);
+        //         this.detailPaneOpen = true;
+        //         this.currentImage = 0;
+        //         this.images = 10;
+
+        //         this.updateView();
+
+        //         this.el?.addEventListener("click", this.action.bind(this));
+        //         document.addEventListener("keydown", this.action.bind(this));
+        //     }
+        //     action(e) {
+        //         const {
+        //             key,
+        //             shiftKey,
+        //             target
+        //         } = e;
+        //         const action = target.getAttribute("data-action");
+        //         const imageID = +target.getAttribute("data-id");
+
+        //         if (key !== "Tab" && !shiftKey) {
+        //             // open the pane (or close if clicking the thumb)
+        //             if (!key && action === "open") {
+        //                 if (imageID === this.currentImage && this.detailPaneOpen)
+        //                     this.closeDetailPane();
+        //                 else
+        //                     this.openDetailPane(imageID);
+
+        //                 // close the pane
+        //             } else if (key === "Escape" || action === "close") {
+        //                 this.closeDetailPane();
+
+        //                 // previous image
+        //             } else if (key === "ArrowLeft" || (!key && action === "prev")) {
+        //                 this.prev();
+
+        //                 // next image
+        //             } else if (key === "ArrowRight" || (!key && action === "next")) {
+        //                 this.next();
+        //             }
+
+        //             this.updateView();
+        //             this.moveFocus(target, action);
+        //         }
+        //     }
+        //     closeDetailPane() {
+        //         this.detailPaneOpen = false;
+        //     }
+        //     openDetailPane(imageID) {
+        //         this.detailPaneOpen = true;
+        //         this.currentImage = imageID;
+        //     }
+        //     prev() {
+        //         --this.currentImage;
+
+        //         if (this.currentImage < 0)
+        //             this.currentImage = 0;
+        //     }
+        //     next() {
+        //         ++this.currentImage;
+
+        //         if (this.images < 2)
+        //             this.currentImage = 0;
+        //         else if (this.currentImage === this.images)
+        //             this.currentImage = this.images - 1;
+        //     }
+        //     moveFocus(target, action) {
+        //         const isPrev = action === "prev";
+        //         const isNext = action === "next";
+
+        //         if (isPrev || isNext) {
+        //             if (target.disabled) {
+        //                 if (isPrev)
+        //                     this.el.querySelector(`[data-action="next"]`)?.focus();
+        //                 else if (isNext)
+        //                     this.el.querySelector(`[data-action="prev"]`)?.focus();
+        //             } else {
+        //                 target.focus();
+        //             }
+        //         }
+        //     }
+        //     updateView() {
+        //         // open or close the pane
+        //         const dataID = this.currentImage;
+        //         const detailPane = document.querySelector("[data-open]");
+        //         detailPane?.setAttribute("data-open", this.detailPaneOpen ? "true" : "false");
+
+        //         // change its DOM location
+        //         const minWidths = [768, 1024, 1280];
+        //         const matchedWidths = minWidths.filter(width => {
+        //             const mediaQuery = window.matchMedia(`(min-width: ${width}px)`);
+        //             return mediaQuery.matches;
+        //         });
+        //         const imagesPerRow = 2 + matchedWidths.length;
+        //         const moveToRow = 1 + Math.ceil((dataID + 1) / imagesPerRow);
+        //         detailPane.style.gridRow = moveToRow;
+
+        //         const firstCellInRow = this.el.querySelector(`[data-id="${dataID}"]`);
+        //         this.el.insertBefore(detailPane, firstCellInRow?.parentNode.nextSibling);
+
+        //         // scroll to it
+        //         if (this.detailPaneOpen) {
+        //             const firstCellBtn = this.el.querySelector(`[data-id="0"]`);
+        //             const firstCell = firstCellBtn?.parentElement;
+        //             const {
+        //                 offsetHeight,
+        //                 offsetTop
+        //             } = firstCell;
+        //             const scrollY = detailPane.offsetTop - (offsetHeight + offsetTop * 2);
+
+        //             window.scrollTo({
+        //                 top: scrollY,
+        //                 behavior: "smooth"
+        //             });
+        //         }
+
+        //         const paneImage = this.el.querySelector(`[data-image]`);
+        //         const paneThumbBtns = this.el.querySelectorAll(`[data-id]`);
+        //         const paneThumbBtn = this.el.querySelector(`[data-id="${dataID}"]`);
+        //         const paneThumb = paneThumbBtn?.querySelector(`[data-thumb]`);
+
+        //         // “…active” class
+        //         Array.from(paneThumbBtns).forEach((btn, i) => {
+        //             const activeClass = "img-grid__cell-img-btn--active";
+
+        //             if (i === dataID && this.detailPaneOpen)
+        //                 btn.classList.add(activeClass);
+        //             else
+        //                 btn.classList.remove(activeClass);
+        //         });
+
+        //         // update the src
+        //         if (paneImage && paneThumb)
+        //             paneImage.src = paneThumb.src;
+
+        //         // update the title
+        //         const paneTitle = this.el.querySelector("[data-title]");
+        //         if (paneTitle)
+        //             paneTitle.textContent = `Random Image ${dataID + 1}`;
+
+        //         // disable the left arrow if on the first image
+        //         const prevButton = this.el.querySelector(`[data-action="prev"]`);
+        //         if (prevButton)
+        //             prevButton.disabled = dataID === 0;
+
+        //         // disable the right arrow if on the last image
+        //         const nextButton = this.el.querySelector(`[data-action="next"]`);
+        //         if (nextButton)
+        //             nextButton.disabled = this.images < 2 || dataID === this.images - 1;
+        //     }
+        // }
+
+        var $box = $(".isotope-box").isotope({
+            itemSelector: ".isotope-item"
+        });
+        // filter functions
+        // bind filter button click
+        $(".isotope-toolbar").on("click", "button", function() {
+            var filterValue = $(this).attr("data-type");
+            $(".isotope-toolbar").find(".active").removeClass("active");
             $(this).addClass("active");
-
-            $.getJSON("js/csvjson.json", function(json) {
-                console.log(json);
+            if (filterValue !== "*") {
+                filterValue = '[data-type="' + filterValue + '"]';
+            }
+            console.log(filterValue);
+            $box.isotope({
+                filter: filterValue
             });
         });
-
-        // SKILLS
-        $(function() {
-            $('.counter').counterUp({
-                delay: 10,
-                time: 2000
-            });
-
-        });
-
-        window.addEventListener("DOMContentLoaded", () => {
-            const ig = new ImageGrid("#img_grid");
-        });
-
-        class ImageGrid {
-            constructor(selector) {
-                this.el = document.querySelector(selector);
-                this.detailPaneOpen = true;
-                this.currentImage = 0;
-                this.images = 10;
-
-                this.updateView();
-
-                this.el?.addEventListener("click", this.action.bind(this));
-                document.addEventListener("keydown", this.action.bind(this));
-            }
-            action(e) {
-                const {
-                    key,
-                    shiftKey,
-                    target
-                } = e;
-                const action = target.getAttribute("data-action");
-                const imageID = +target.getAttribute("data-id");
-
-                if (key !== "Tab" && !shiftKey) {
-                    // open the pane (or close if clicking the thumb)
-                    if (!key && action === "open") {
-                        if (imageID === this.currentImage && this.detailPaneOpen)
-                            this.closeDetailPane();
-                        else
-                            this.openDetailPane(imageID);
-
-                        // close the pane
-                    } else if (key === "Escape" || action === "close") {
-                        this.closeDetailPane();
-
-                        // previous image
-                    } else if (key === "ArrowLeft" || (!key && action === "prev")) {
-                        this.prev();
-
-                        // next image
-                    } else if (key === "ArrowRight" || (!key && action === "next")) {
-                        this.next();
-                    }
-
-                    this.updateView();
-                    this.moveFocus(target, action);
-                }
-            }
-            closeDetailPane() {
-                this.detailPaneOpen = false;
-            }
-            openDetailPane(imageID) {
-                this.detailPaneOpen = true;
-                this.currentImage = imageID;
-            }
-            prev() {
-                --this.currentImage;
-
-                if (this.currentImage < 0)
-                    this.currentImage = 0;
-            }
-            next() {
-                ++this.currentImage;
-
-                if (this.images < 2)
-                    this.currentImage = 0;
-                else if (this.currentImage === this.images)
-                    this.currentImage = this.images - 1;
-            }
-            moveFocus(target, action) {
-                const isPrev = action === "prev";
-                const isNext = action === "next";
-
-                if (isPrev || isNext) {
-                    if (target.disabled) {
-                        if (isPrev)
-                            this.el.querySelector(`[data-action="next"]`)?.focus();
-                        else if (isNext)
-                            this.el.querySelector(`[data-action="prev"]`)?.focus();
-                    } else {
-                        target.focus();
-                    }
-                }
-            }
-            updateView() {
-                // open or close the pane
-                const dataID = this.currentImage;
-                const detailPane = document.querySelector("[data-open]");
-                detailPane?.setAttribute("data-open", this.detailPaneOpen ? "true" : "false");
-
-                // change its DOM location
-                const minWidths = [768, 1024, 1280];
-                const matchedWidths = minWidths.filter(width => {
-                    const mediaQuery = window.matchMedia(`(min-width: ${width}px)`);
-                    return mediaQuery.matches;
-                });
-                const imagesPerRow = 2 + matchedWidths.length;
-                const moveToRow = 1 + Math.ceil((dataID + 1) / imagesPerRow);
-                detailPane.style.gridRow = moveToRow;
-
-                const firstCellInRow = this.el.querySelector(`[data-id="${dataID}"]`);
-                this.el.insertBefore(detailPane, firstCellInRow?.parentNode.nextSibling);
-
-                // scroll to it
-                if (this.detailPaneOpen) {
-                    const firstCellBtn = this.el.querySelector(`[data-id="0"]`);
-                    const firstCell = firstCellBtn?.parentElement;
-                    const {
-                        offsetHeight,
-                        offsetTop
-                    } = firstCell;
-                    const scrollY = detailPane.offsetTop - (offsetHeight + offsetTop * 2);
-
-                    window.scrollTo({
-                        top: scrollY,
-                        behavior: "smooth"
-                    });
-                }
-
-                const paneImage = this.el.querySelector(`[data-image]`);
-                const paneThumbBtns = this.el.querySelectorAll(`[data-id]`);
-                const paneThumbBtn = this.el.querySelector(`[data-id="${dataID}"]`);
-                const paneThumb = paneThumbBtn?.querySelector(`[data-thumb]`);
-
-                // “…active” class
-                Array.from(paneThumbBtns).forEach((btn, i) => {
-                    const activeClass = "img-grid__cell-img-btn--active";
-
-                    if (i === dataID && this.detailPaneOpen)
-                        btn.classList.add(activeClass);
-                    else
-                        btn.classList.remove(activeClass);
-                });
-
-                // update the src
-                if (paneImage && paneThumb)
-                    paneImage.src = paneThumb.src;
-
-                // update the title
-                const paneTitle = this.el.querySelector("[data-title]");
-                if (paneTitle)
-                    paneTitle.textContent = `Random Image ${dataID + 1}`;
-
-                // disable the left arrow if on the first image
-                const prevButton = this.el.querySelector(`[data-action="prev"]`);
-                if (prevButton)
-                    prevButton.disabled = dataID === 0;
-
-                // disable the right arrow if on the last image
-                const nextButton = this.el.querySelector(`[data-action="next"]`);
-                if (nextButton)
-                    nextButton.disabled = this.images < 2 || dataID === this.images - 1;
-            }
-        }
     </script>
 </body>
 

@@ -16,7 +16,7 @@
 
 <body>
     <?php include("include/header.php"); 
-    $draftEn = "SELECT * FROM mst_events_$currentLang WHERE status='L' ORDER BY event_dt desc";
+    $draftEn = "SELECT * FROM mst_events_$currentLang WHERE status='L'  and event_dt >= now()-INTERVAL '1 DAY'  ORDER BY event_dt desc";
     $resultDraftEn = pg_query($db, $draftEn);
     ?>
     <!-- bradcam_area_start  -->
@@ -65,6 +65,15 @@
             <!-- <div class="row"> -->
             <div class="data-tables">
             <h3 class="text-center"><strong>Events</strong></h3>
+            <hr class="hr_align">
+                <!-- <div class="col-lg-2"> -->
+                <div class="row table_row">
+                    <div class="col-lg-10">
+                    </div>
+                    <div class="col-lg-2">
+                        <a href="niot_events_archive.php" class="btn btn-success button pull-right" style="margin-left:10px;color:#fff"><i class="fa fa-archive" aria-hidden="true"></i> Archive </a>
+                    </div>
+                </div>
                 <div class="table-responsive">
                     <table id="tbl-en-draft" class="table  table-bordered dt-responsive" style="width:100">
                         <!-- <button class="btn btn-success notika-btn-success pull-left" data-toggle="modal" data-target="#addModal" style="margin-right:20px;" onclick="addNew('en');"><i class="fa fa-plus"> </i> Add New</button>
@@ -77,7 +86,6 @@
                                 <th style="width:50%" class="text-center">Event Title</th>
                                 <th class="text-center">Venue</th>
                                 <th class="text-center">File</th>
-
                             </tr>
                         </thead>
                         <tbody>
@@ -90,7 +98,7 @@
                                 )
 
                             ) {
-                                $path = "../niotadmin/uploads/events" . $row['filename'] . "";
+                                $path = "uploads/events" . $row['filename'] . "";
                                 $fileSize = filesize($path);
                                 $fileSize = round($fileSize / 1024);
                                 //   var_dump($fileSize);
@@ -120,7 +128,7 @@
                                     <td style="width:20%;"><?php
                                                             if ($row['eventfile'] != '') {
                                                             ?>
-                                            <a href='../niotadmin/uploads/events/<?php echo $row['eventfile'] ?>' target="_blank" style="color:blue;" title="View Here"> View Ad (<?php echo  $row['ad_filesize'];  ?> ) &nbsp; <i class="fa fa-file-pdf-o fa-lg" style="color:#F44336;"></i></a> &nbsp;&nbsp;<a href=""> <i class="fa fa-download fa-lg " style="color:#673AB7;" title="Download Here" aria-hidden="true"></i></a>
+                                            <a href='uploads/events/<?php echo $row['eventfile'] ?>' target="_blank" style="color:blue;" title="View Here"> View Ad (<?php echo  $row['ad_filesize'];  ?> ) &nbsp; <i class="fa fa-file-pdf-o fa-lg" style="color:#F44336;"></i></a> &nbsp;&nbsp;<a href=""> <i class="fa fa-download fa-lg " style="color:#673AB7;" title="Download Here" aria-hidden="true"></i></a>
                                         <?php
 
 

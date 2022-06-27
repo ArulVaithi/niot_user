@@ -83,7 +83,7 @@ where b1.status ='L' and a1.status = 'L'  and a1.contents <>''";
     </div> -->
     <!-- <div class="pages" style="margin:auto;"> -->
     <!-- <div class="container"> -->
-    <div class="col-lg-12" style="padding-left:150px;padding-right:150px;">
+    <div class="col-lg-12 main-section" >
         <div class="section-title wow zoomIn" data-aos="fade-up">
             <h2 class="text-center contenttitle">Awards</h2>
             <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
@@ -93,8 +93,8 @@ where b1.status ='L' and a1.status = 'L'  and a1.contents <>''";
                 <div class="row">
                     <div class="col-lg-12 mb-5 mb-lg-0">
                         <div class="blog_left_sidebar">
-                            <div class="row">
-                                <div class="col-lg-6">
+                            <div class="row" id="lightgallery" >
+                                <div class="col-lg-6" data-aos="fade" data-src="img/awards/award1.png" data-sub-html=" Dr. R. Venkatesan, Scientist G-@MoesNiot received \National Award\ from MoES for his outstanding contributions in the field of \Ocean Science & Technology\/during the MoES Foundation Day on 27th July 2018 at New Delhi">
                                     <article class="blog_item">
                                         <div class="blog_item_img">
                                             <img class="card-img rounded-0" src="img/awards/award1.png" alt="">
@@ -121,6 +121,7 @@ where b1.status ='L' and a1.status = 'L'  and a1.contents <>''";
                                             <a href="#" class="blog_item_date">
                                                 <h3>15</h3>
                                                 <p>Jan</p>
+                                                <p>2018</p>
                                             </a>
                                         </div>
 
@@ -140,6 +141,7 @@ where b1.status ='L' and a1.status = 'L'  and a1.contents <>''";
                                             <a href="#" class="blog_item_date">
                                                 <h3>15</h3>
                                                 <p>Jan</p>
+                                                <p>2018</p>
                                             </a>
                                         </div>
 
@@ -160,6 +162,7 @@ where b1.status ='L' and a1.status = 'L'  and a1.contents <>''";
                                             <a href="#" class="blog_item_date">
                                                 <h3>15</h3>
                                                 <p>Jan</p>
+                                                <p>2018</p>
                                             </a>
                                         </div>
 
@@ -180,6 +183,7 @@ where b1.status ='L' and a1.status = 'L'  and a1.contents <>''";
                                             <a href="#" class="blog_item_date">
                                                 <h3>15</h3>
                                                 <p>Jan</p>
+                                                <p>2018</p>
                                             </a>
                                         </div>
 
@@ -229,7 +233,7 @@ where b1.status ='L' and a1.status = 'L'  and a1.contents <>''";
     <script src="js/csvjson.json"></script>
     <script>
         $(document).ready(function() {
-
+            $('#lightgallery').lightGallery();
         });
 
         $('#tbl-en-draft').DataTable();
@@ -237,55 +241,8 @@ where b1.status ='L' and a1.status = 'L'  and a1.contents <>''";
 
         // });
     </script>
-    <script>
-        var json;
-        $(document).ready(function() {
 
-            // var data = eval("(" + json.responseText + ")");
-            // document.write(data["a"]);
-            // console.log(data);
-            $(".filter-b").click(function() {
-                var value = $(this).attr('data-filter');
-                if (value == "all") {
-                    $('.filter').show('1000');
-                } else {
-                    $(".filter").not('.' + value).hide('3000');
-                    $('.filter').filter('.' + value).show('3000');
-                }
-            });
-
-            if ($(".filter-b").removeClass("active")) {
-                $(this).removeClass("active");
-            }
-            $(this).addClass("active");
-
-            $.getJSON("js/csvjson.json", function(json) {
-                console.log(json);
-            });
-        });
-
-        // SKILLS
-        $(function() {
-            $('.counter').counterUp({
-                delay: 10,
-                time: 2000
-            });
-
-        });
-        let processScroll = () => {
-            let docElem = document.documentElement,
-                docBody = document.body,
-                scrollTop = docElem['scrollTop'] || docBody['scrollTop'],
-                scrollBottom = (docElem['scrollHeight'] || docBody['scrollHeight']) - window.innerHeight,
-                scrollPercent = scrollTop / scrollBottom * 100 + '%';
-            progressPercent = $('#progress-percent');
-            // console.log(scrollTop + ' / ' + scrollBottom + ' / ' + scrollPercent);
-
-            document.getElementById("progress-bar").style.setProperty("--scrollAmount", scrollPercent);
-        }
-
-        document.addEventListener('scroll', processScroll);
-    </script>
+   
 </body>
 
 </html>

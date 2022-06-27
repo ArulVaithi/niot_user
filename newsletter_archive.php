@@ -65,7 +65,7 @@ $previousyear = $currentyear - 1;
                 <div class="col-xl-12">
                     <div class="bradcam_text">
                         <h3></h3>
-                        <p><a href="index.php"><i class="fa fa-home "> </i> /</a> Publications <a href="pressrelease_details.php"> / News Letter </a> / Archive</p>
+                        <p><a href="index.php"><i class="fa fa-home "> </i> /</a> Publications <a href="newsletter_details.php"> / News Letter </a> / Archive</p>
                     </div>
                 </div>
                 <!-- </div> -->

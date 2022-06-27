@@ -83,7 +83,7 @@ where b1.status ='L' and a1.status = 'L'  and a1.contents <>''";
     </div> -->
     <!-- <div class="pages" style="margin:auto;"> -->
     <!-- <div class="container"> -->
-    <div class="col-lg-12" style="padding-left:150px;padding-right:150px;">
+    <div class="col-lg-12 main-section">
     <div class="section-title wow zoomIn" data-aos="fade-up">
                 <h2 class="text-center contenttitle">Administartion</h2>
                 <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
@@ -104,7 +104,7 @@ where b1.status ='L' and a1.status = 'L'  and a1.contents <>''";
                     while ($content = pg_fetch_array($result_content)) {   ?>
                         <section class="admin_section  administration_bg " id="<?php echo $content['mas_id'] ?>">
                             <div class="row ">
-                                <div class="col-lg-12 ">
+                                <div class="col-lg-12 stickytitle">
                                     <h2 ><?php echo $content['title']; ?></h2>
                                     <div class="admin_header"></div>
                                 </div>

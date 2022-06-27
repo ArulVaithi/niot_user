@@ -52,7 +52,7 @@ if ($pan_count == 1) {
 
                         //echo $filename[0][$i]."\n";
 	
-                        $path = "../niotuser/uploads/form16/" . $filename[0][$i] . "/".$pan_number.".pdf";
+                        $path = "uploads/form16/" . $filename[0][$i] . "/".$pan_number.".pdf";
                         $fileSize = filesize($path);
                         $fileSize = round($fileSize / 1024);
 

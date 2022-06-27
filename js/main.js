@@ -19,7 +19,9 @@
 
   $(document).ready(function () {
     $(".select2").select2();
-    
+    $(".langselect").select2({
+      minimumResultsForSearch: -1
+    });
     // var date = new Date();
     // var today = new Date(date.getFullYear(), date.getMonth(), date.getDate());
 
@@ -578,7 +580,8 @@
     }
   }
 
-  
+
+
 
   // When the user clicks on the button, scroll to the top of the document
 })(jQuery);

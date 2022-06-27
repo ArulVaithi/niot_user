@@ -243,13 +243,13 @@
     <section>
         <!-- <div class="container"> -->
         <!-- <div class="row"> -->
-        <div class="data-tables" style="padding-left:100px;padding-right:100px">
+        <div class="data-tables recruit_style" >
             <h2 class="text-center"><strong>Recruitments</strong></h2>
             <!-- <h4 class="text-center"><strong>Current Vacancies</strong></h4> -->
             <div class="row table_row">
                     <div class="col-lg-10">
                     </div>
-                    <div class="col-lg-2">
+                    <div class="col-lg-2 text-center">
                         <a href="recruitment_archive.php" class="btn btn-success button pull-right" style="margin-left:10px;color:#fff"><i class="fa fa-archive" aria-hidden="true"></i> Archive </a>
                     </div>
                 </div>
